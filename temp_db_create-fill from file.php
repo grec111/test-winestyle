@@ -21,7 +21,7 @@ function fill_from_file()
         //check avatars
     }
 
-    mysqli_query($link_db,"CREATE TABLE Payment (id_worker INT ,Salary INT, Date_s DATE, PRIMARY KEY(id_worker))") or die(mysqli_error($link_db));
+    mysqli_query($link_db,"CREATE TABLE Payment (id_worker INT ,Salary INT,Bonus INT, Date_s DATE, PRIMARY KEY(id_worker))") or die(mysqli_error($link_db));
     //inserts с рандомом даты(в теч 3х месяцев)+рандом зп
     mysqli_close($link_db);
 
