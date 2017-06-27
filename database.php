@@ -53,6 +53,7 @@ function fill_from_file()
         $id_inc++;
     }
     mysqli_close($link_db);
+    return true;
 }
 
 function get_table($month)

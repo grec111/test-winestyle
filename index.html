@@ -1,9 +1,7 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-
 <script type="text/javascript">
     $(document).ready(function () {
         send_request('2017-06-01');
@@ -11,13 +9,13 @@
 //				$('#table #salary').each(function() {
                 //  $(this).html() / 1   -val
 //					$(this).html('123123');
+            //$('#gcw_valFDtbXg6kP1').val() - usd-rub
                 //              })
 //	           	console.log($('#month').val()+'-01');
                 send_request($('#month').val() + '-01');
             }
         )
     });
-
     function send_request(data) {
         $("tr").empty();
         $.ajax({
@@ -71,6 +69,24 @@
 
     </div>
 </div>
+
+
+<div id='gcw_mainFDtbXg6kP' class='gcw_mainFDtbXg6kP'></div>
+
+<script>function reloadFDtbXg6kP() {
+    var sc = document.getElementById('scFDtbXg6kP');
+    if (sc) sc.parentNode.removeChild(sc);
+    sc = document.createElement('script');
+    sc.type = 'text/javascript';
+    sc.charset = 'UTF-8';
+    sc.async = true;
+    sc.id = 'scFDtbXg6kP';
+    sc.src = 'https://freecurrencyrates.com/ru/widget-horizontal?iso=USDRUB&df=2&p=FDtbXg6kP&v=i&source=cbr&width=220&width_title=110&firstrowvalue=1&thm=aaaaaa,C9C9C9,BBBBBB,dddddd,444444,cccccc,f8f8f8,3383BB,000000&title=%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%B5%D1%80%20%D0%B2%D0%B0%D0%BB%D1%8E%D1%82&tzo=-180';
+    var div = document.getElementById('gcw_mainFDtbXg6kP');
+    div.parentNode.insertBefore(sc, div);
+}
+reloadFDtbXg6kP(); </script>
+
 
 </body>
 </html>
