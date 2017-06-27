@@ -7,19 +7,23 @@
     $(document).ready(function () {
         send_request('2017-06-01');
         $('.send_data').click(function () {
-//				$('#table #salary').each(function() {
-                //  $(this).html() / 1   -val
-//					$(this).html('123123');
-                //$('#gcw_valFDtbXg6kP1').val() - usd-rub
-                //              })
-//	           	console.log($('#month').val()+'-01');
                 gcw_handlerFDtbXg6kP.reload();
                 send_request($('#month').val() + '-01');
             }
         )
         $('.change_currecy_rub').click(function () {
+            //$('#label').val()
+            var usd_curr=1;
+            if($('#label').val()=="usd")
+            {
+                usd_curr=$('#gcw_valFDtbXg6kP1').val();
+            }else
+            {
+                usd_curr=1/$('#gcw_valFDtbXg6kP1').val();
+            }
             $('#table #salary').each(function () {
-                    $(this).html($(this).html() / $('#gcw_valFDtbXg6kP1').val());
+
+                    $(this).html($(this).html() / usd_curr);
                 }
             )
         })
@@ -69,7 +73,10 @@
 </p>
 <p>
     <input type="submit" value="Изменить Валюту" class="change_currecy_rub">
-    
+    <select name="currency" id="label">
+        <option value="rub">rub</option>
+        <option value="usd">usd</option>
+    </select>
 </p>
 
 
