@@ -12,42 +12,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="temp_db_create-fill from file.php" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/temp_db_create-fill from file.php">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
-              <folding>
-                <marker date="1498501950663" expanded="true" signature="241:245" ph="CREATE TABLE... MyTable" />
-                <marker date="1498501950663" expanded="true" signature="268:336" ph="CREATE TABLE... Professions" />
-                <marker date="1498501950663" expanded="true" signature="268:337" ph="CREATE TABLE... Professions" />
-                <marker date="1498501950663" expanded="true" signature="400:444" ph="INSERT INTO articles... " />
-                <marker date="1498501950663" expanded="true" signature="400:458" ph="INSERT INTO articles... " />
-                <marker date="1498501950663" expanded="true" signature="554:711" ph="CREATE TABLE... Workers" />
-                <marker date="1498501950663" expanded="true" signature="998:1076" ph="INSERT INTO Professions... " />
-                <marker date="1498501950663" expanded="true" signature="998:1098" ph="INSERT INTO Professions... " />
-                <marker date="1498501950663" expanded="true" signature="998:1125" ph="INSERT INTO Professions... " />
-                <marker date="1498501950663" expanded="true" signature="1187:1282" ph="CREATE TABLE... Payment" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/database.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="workers.txt" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/workers.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+            <state relative-caret-position="448">
+              <caret line="27" column="134" lean-forward="false" selection-start-line="27" selection-start-column="134" selection-end-line="27" selection-end-column="134" />
               <folding />
             </state>
           </provider>
@@ -56,9 +25,30 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="102">
+              <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/database.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="704">
+              <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+              <folding>
+                <marker date="1498566625477" expanded="true" signature="825:919" ph="CREATE TABLE... Professions" />
+                <marker date="1498566625477" expanded="true" signature="950:1106" ph="CREATE TABLE... Workers" />
+                <marker date="1498566625477" expanded="true" signature="950:1131" ph="CREATE TABLE... Workers" />
+                <marker date="1498566625477" expanded="true" signature="1162:1258" ph="CREATE TABLE... Payment" />
+                <marker date="1498566625477" expanded="true" signature="1307:1397" ph="INSERT INTO Professions... " />
+                <marker date="1498566625477" expanded="true" signature="1718:1859" ph="INSERT INTO Workers... " />
+                <marker date="1498566625477" expanded="true" signature="2005:2117" ph="INSERT INTO Payment... " />
+                <marker date="1498566625477" expanded="true" signature="2195:2307" ph="INSERT INTO Payment... " />
+                <marker date="1498566625477" expanded="true" signature="2385:2497" ph="INSERT INTO Payment... " />
+                <marker date="1498566625477" expanded="true" signature="2630:2732" ph="SELECT * FRO... Payment" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -72,9 +62,12 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/config.php" />
-        <option value="$PROJECT_DIR$/database.php" />
         <option value="$PROJECT_DIR$/workers.txt" />
         <option value="$PROJECT_DIR$/temp_db_create-fill from file.php" />
+        <option value="$PROJECT_DIR$/scrip.js" />
+        <option value="$PROJECT_DIR$/database.php" />
+        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -114,7 +107,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -130,6 +122,7 @@
         </subPane>
       </pane>
       <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -149,8 +142,20 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="PHP Script.temp_db_create-fill from file.php">
+  <component name="RunManager" selected="PHP Script.index.php">
     <configuration default="false" name="temp_db_create-fill from file.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/temp_db_create-fill from file.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="database.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/database.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="index.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/index.php">
+      <method />
+    </configuration>
+    <configuration default="false" name="scrip.js" type="NodeJSConfigurationType" factoryName="Node.js" temporary="true" path-to-node="project" path-to-js-file="scrip.js" working-dir="$PROJECT_DIR$">
+      <method />
+    </configuration>
+    <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:9000/test-winestyle/index.html">
       <method />
     </configuration>
     <configuration default="true" type="CodeceptionConfigurationType" factoryName="Codeception">
@@ -223,12 +228,20 @@
       <recursive>false</recursive>
       <method />
     </configuration>
-    <list size="1">
+    <list size="5">
       <item index="0" class="java.lang.String" itemvalue="PHP Script.temp_db_create-fill from file.php" />
+      <item index="1" class="java.lang.String" itemvalue="PHP Script.database.php" />
+      <item index="2" class="java.lang.String" itemvalue="PHP Script.index.php" />
+      <item index="3" class="java.lang.String" itemvalue="Node.js.scrip.js" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
     </list>
     <recent_temporary>
-      <list size="1">
-        <item index="0" class="java.lang.String" itemvalue="PHP Script.temp_db_create-fill from file.php" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="PHP Script.index.php" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="2" class="java.lang.String" itemvalue="Node.js.scrip.js" />
+        <item index="3" class="java.lang.String" itemvalue="PHP Script.database.php" />
+        <item index="4" class="java.lang.String" itemvalue="PHP Script.temp_db_create-fill from file.php" />
       </list>
     </recent_temporary>
   </component>
@@ -244,30 +257,32 @@
       <updated>1498476621591</updated>
       <workItem from="1498476624019" duration="13318000" />
       <workItem from="1498500465730" duration="1649000" />
+      <workItem from="1498540246335" duration="19989000" />
+      <workItem from="1498561927710" duration="9890000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14967000" />
+    <option name="totallyTimeSpent" value="44846000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13988096" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934713" sideWeight="0.50238097" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33188248" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25136018" sideWeight="0.49761903" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934713" sideWeight="0.49761903" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
@@ -285,44 +300,72 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="php">
-          <url>file://$PROJECT_DIR$/temp_db_create-fill from file.php</url>
-          <line>23</line>
-          <option name="timeStamp" value="17" />
+          <url>file://$PROJECT_DIR$/database.php</url>
+          <line>67</line>
+          <option name="timeStamp" value="37" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="19" />
+      <option name="time" value="39" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="PhpLocalRunConfigurationType">
-        <watch expression="mysqli_error($link_db)" language="PHP" />
+        <watch expression="$work_table_view" language="PHP" />
       </configuration>
     </watches-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/temp_db_create-fill from file.php">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="0" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="4" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1156">
+          <caret line="68" column="31" lean-forward="false" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="31" />
           <folding>
-            <marker date="1498501950663" expanded="true" signature="241:245" ph="CREATE TABLE... MyTable" />
-            <marker date="1498501950663" expanded="true" signature="268:336" ph="CREATE TABLE... Professions" />
-            <marker date="1498501950663" expanded="true" signature="268:337" ph="CREATE TABLE... Professions" />
-            <marker date="1498501950663" expanded="true" signature="400:444" ph="INSERT INTO articles... " />
-            <marker date="1498501950663" expanded="true" signature="400:458" ph="INSERT INTO articles... " />
-            <marker date="1498501950663" expanded="true" signature="554:711" ph="CREATE TABLE... Workers" />
-            <marker date="1498501950663" expanded="true" signature="998:1076" ph="INSERT INTO Professions... " />
-            <marker date="1498501950663" expanded="true" signature="998:1098" ph="INSERT INTO Professions... " />
-            <marker date="1498501950663" expanded="true" signature="998:1125" ph="INSERT INTO Professions... " />
-            <marker date="1498501950663" expanded="true" signature="1187:1282" ph="CREATE TABLE... Payment" />
+            <marker date="1498566625477" expanded="true" signature="825:919" ph="CREATE TABLE... Professions" />
+            <marker date="1498566625477" expanded="true" signature="950:1106" ph="CREATE TABLE... Workers" />
+            <marker date="1498566625477" expanded="true" signature="950:1131" ph="CREATE TABLE... Workers" />
+            <marker date="1498566625477" expanded="true" signature="1162:1258" ph="CREATE TABLE... Payment" />
+            <marker date="1498566625477" expanded="true" signature="1307:1397" ph="INSERT INTO Professions... " />
+            <marker date="1498566625477" expanded="true" signature="1718:1859" ph="INSERT INTO Workers... " />
+            <marker date="1498566625477" expanded="true" signature="2005:2117" ph="INSERT INTO Payment... " />
+            <marker date="1498566625477" expanded="true" signature="2195:2307" ph="INSERT INTO Payment... " />
+            <marker date="1498566625477" expanded="true" signature="2385:2497" ph="INSERT INTO Payment... " />
+            <marker date="1498566625477" expanded="true" signature="2630:2732" ph="SELECT * FRO... Payment" />
           </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/temp_db_create-fill from file.php" />
     <entry file="file://$PROJECT_DIR$/database.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
+          <folding>
+            <marker date="1498566625477" expanded="true" signature="825:919" ph="CREATE TABLE... Professions" />
+            <marker date="1498566625477" expanded="true" signature="950:1106" ph="CREATE TABLE... Workers" />
+            <marker date="1498566625477" expanded="true" signature="950:1131" ph="CREATE TABLE... Workers" />
+            <marker date="1498566625477" expanded="true" signature="1162:1258" ph="CREATE TABLE... Payment" />
+            <marker date="1498566625477" expanded="true" signature="1307:1397" ph="INSERT INTO Professions... " />
+            <marker date="1498566625477" expanded="true" signature="1718:1859" ph="INSERT INTO Workers... " />
+            <marker date="1498566625477" expanded="true" signature="2005:2117" ph="INSERT INTO Payment... " />
+            <marker date="1498566625477" expanded="true" signature="2195:2307" ph="INSERT INTO Payment... " />
+            <marker date="1498566625477" expanded="true" signature="2385:2497" ph="INSERT INTO Payment... " />
+            <marker date="1498566625477" expanded="true" signature="2630:2732" ph="SELECT * FRO... Payment" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -330,67 +373,86 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="238">
           <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/temp_db_create-fill from file.php" />
+    <entry file="file://$PROJECT_DIR$/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="272">
+          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
+          <folding>
+            <marker date="1498566625477" expanded="true" signature="825:919" ph="CREATE TABLE... Professions" />
+            <marker date="1498566625477" expanded="true" signature="950:1106" ph="CREATE TABLE... Workers" />
+            <marker date="1498566625477" expanded="true" signature="950:1131" ph="CREATE TABLE... Workers" />
+            <marker date="1498566625477" expanded="true" signature="1162:1258" ph="CREATE TABLE... Payment" />
+            <marker date="1498566625477" expanded="true" signature="1307:1397" ph="INSERT INTO Professions... " />
+            <marker date="1498566625477" expanded="true" signature="1718:1859" ph="INSERT INTO Workers... " />
+            <marker date="1498566625477" expanded="true" signature="2005:2117" ph="INSERT INTO Payment... " />
+            <marker date="1498566625477" expanded="true" signature="2195:2307" ph="INSERT INTO Payment... " />
+            <marker date="1498566625477" expanded="true" signature="2385:2497" ph="INSERT INTO Payment... " />
+            <marker date="1498566625477" expanded="true" signature="2630:2732" ph="SELECT * FRO... Payment" />
+          </folding>
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/workers.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php" />
     <entry file="file://$PROJECT_DIR$/config.php" />
-    <entry file="file://$PROJECT_DIR$/database.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/workers.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Downloads/spring_time_free_standard/html/css/style.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-2020">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/temp_db_create-fill from file.php" />
+    <entry file="file://$PROJECT_DIR$/workers.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="0" lean-forward="false" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/scrip.js" />
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="2" lean-forward="false" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/temp_db_create-fill from file.php">
+    <entry file="file://$PROJECT_DIR$/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="23" lean-forward="true" selection-start-line="20" selection-start-column="23" selection-end-line="20" selection-end-column="23" />
+        <state relative-caret-position="704">
+          <caret line="67" column="0" lean-forward="false" selection-start-line="67" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
           <folding>
-            <marker date="1498501950663" expanded="true" signature="241:245" ph="CREATE TABLE... MyTable" />
-            <marker date="1498501950663" expanded="true" signature="268:336" ph="CREATE TABLE... Professions" />
-            <marker date="1498501950663" expanded="true" signature="268:337" ph="CREATE TABLE... Professions" />
-            <marker date="1498501950663" expanded="true" signature="400:444" ph="INSERT INTO articles... " />
-            <marker date="1498501950663" expanded="true" signature="400:458" ph="INSERT INTO articles... " />
-            <marker date="1498501950663" expanded="true" signature="554:711" ph="CREATE TABLE... Workers" />
-            <marker date="1498501950663" expanded="true" signature="998:1076" ph="INSERT INTO Professions... " />
-            <marker date="1498501950663" expanded="true" signature="998:1098" ph="INSERT INTO Professions... " />
-            <marker date="1498501950663" expanded="true" signature="998:1125" ph="INSERT INTO Professions... " />
-            <marker date="1498501950663" expanded="true" signature="1187:1282" ph="CREATE TABLE... Payment" />
+            <marker date="1498566625477" expanded="true" signature="825:919" ph="CREATE TABLE... Professions" />
+            <marker date="1498566625477" expanded="true" signature="950:1106" ph="CREATE TABLE... Workers" />
+            <marker date="1498566625477" expanded="true" signature="950:1131" ph="CREATE TABLE... Workers" />
+            <marker date="1498566625477" expanded="true" signature="1162:1258" ph="CREATE TABLE... Payment" />
+            <marker date="1498566625477" expanded="true" signature="1307:1397" ph="INSERT INTO Professions... " />
+            <marker date="1498566625477" expanded="true" signature="1718:1859" ph="INSERT INTO Workers... " />
+            <marker date="1498566625477" expanded="true" signature="2005:2117" ph="INSERT INTO Payment... " />
+            <marker date="1498566625477" expanded="true" signature="2195:2307" ph="INSERT INTO Payment... " />
+            <marker date="1498566625477" expanded="true" signature="2385:2497" ph="INSERT INTO Payment... " />
+            <marker date="1498566625477" expanded="true" signature="2630:2732" ph="SELECT * FRO... Payment" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="448">
+          <caret line="27" column="134" lean-forward="false" selection-start-line="27" selection-start-column="134" selection-end-line="27" selection-end-column="134" />
+          <folding />
         </state>
       </provider>
     </entry>
