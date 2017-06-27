@@ -1,75 +1,75 @@
-﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 <script type="text/javascript">
-    $(document).ready(function() {
+    $(document).ready(function () {
         send_request('2017-06-01');
         $('.send_data').click(function () {
 //				$('#table #salary').each(function() {
-				  //  $(this).html() / 1   -val
+                //  $(this).html() / 1   -val
 //					$(this).html('123123');
-  //              })
+                //              })
 //	           	console.log($('#month').val()+'-01');
-				send_request($('#month').val()+'-01');
+                send_request($('#month').val() + '-01');
             }
         )
     });
 
     function send_request(data) {
-        $( "tr" ).empty();
-		$.ajax({
-        type: 'GET',
-        url: 'index.php',
-        data: {'month': data},
-        success: function (result) {
-            if (result!="Error-Not Found-404-Fatality")
-			{
-			console.log(result);
-            var html = '<tr></tr><th>Имя</th><th>Фамилия</th><th>Должность</th><th>ЗП</th><th>Бонус</th><th>Фото</th><th>Дата</th></tr>';
-            $.each($.parseJSON(result), function (index, element) {
-                html +='<tr><td>' +element.Worker_Name+'</td><td>' +element.Worker_LastName+ '</td><td>'+element.Worker_Prof+'</td><td  id="salary">' + element.Salary + '</td><td>'+ element.Bonus +'</td><td>'+element.Avatar+'</td><td>'+element.Date_s+'</td></tr>';
-            });
-			}else html="Error-Not Found-404-Fatality";
-            $('#table > tbody').append(html);
-        }
-		});
+        $("tr").empty();
+        $.ajax({
+            type: 'GET',
+            url: 'index.php',
+            data: {'month': data},
+            success: function (result) {
+                if (result != "Error-Not Found-404-Fatality") {
+                    console.log(result);
+                    var html = '<tr></tr><th>Имя</th><th>Фамилия</th><th>Должность</th><th>ЗП</th><th>Бонус</th><th>Фото</th><th>Дата</th></tr>';
+                    $.each($.parseJSON(result), function (index, element) {
+                        html += '<tr><td>' + element.Worker_Name + '</td><td>' + element.Worker_LastName + '</td><td>' + element.Worker_Prof + '</td><td  id="salary">' + element.Salary + '</td><td>' + element.Bonus + '</td><td>' + element.Avatar + '</td><td>' + element.Date_s + '</td></tr>';
+                    });
+                } else html = "Error-Not Found-404-Fatality";
+                $('#table > tbody').append(html);
+            }
+        });
     }
 
 </script>
 
 
-
 <head>
-	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
-	<title>Test WineStyle</title>
-	<link rel="stylesheet" href="css/style.css" type="text/css" media="all" />
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
+    <title>Test WineStyle</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
 
 <h1>Вывод зарплат сотрудников</h1>
 
 <table class="table-bordered" id="table">
-	<tbody>
-	</tbody>
+    <tbody>
+    </tbody>
 </table>
 
 <p>
-<input type="month" name="month" id="month">
-<input type="submit" value="Показать за месяц" class="send_data">
+    <input type="month" name="month" id="month">
+    <input type="submit" value="Показать за месяц" class="send_data">
 </p>
 <form action="#openModal">
-	<input type="submit" class="button_active" value="Добавить нового сотрудника">
+    <input type="submit" class="button_active" value="Добавить нового сотрудника">
 </form>
 
 <div id="openModal" class="modalDialog">
-	<div>
-		<a href="#close" title="Закрыть" class="close">X</a>
-		<h2>Модальное окно</h2>
+    <div>
+        <a href="#close" title="Закрыть" class="close">X</a>
+        <h2>Модальное окно</h2>
 
-	</div>
+    </div>
 </div>
 
 </body>
