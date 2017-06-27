@@ -5,7 +5,6 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
-
         send_request('2017-06-01');
         $('.send_data').click(function () {
 //				$('#table #salary').each(function() {
@@ -16,10 +15,15 @@
 //	           	console.log($('#month').val()+'-01');
                 gcw_handlerFDtbXg6kP.reload();
                 send_request($('#month').val() + '-01');
-
-
             }
         )
+        $('.change_currecy_rub').click(function () {
+            $('#table #salary').each(function () {
+                    $(this).html($(this).html() / $('#gcw_valFDtbXg6kP1').val());
+                }
+            )
+        })
+
     });
     function send_request(data) {
         $("tr").empty();
@@ -63,6 +67,12 @@
     <input type="month" name="month" id="month">
     <input type="submit" value="Показать за месяц" class="send_data">
 </p>
+<p>
+    <input type="submit" value="Изменить Валюту" class="change_currecy_rub">
+    
+</p>
+
+
 <form action="#openModal">
     <input type="submit" class="button_active" value="Добавить нового сотрудника">
 </form>
