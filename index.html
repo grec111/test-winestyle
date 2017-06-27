@@ -2,17 +2,22 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
 <script type="text/javascript">
     $(document).ready(function () {
+
         send_request('2017-06-01');
         $('.send_data').click(function () {
 //				$('#table #salary').each(function() {
                 //  $(this).html() / 1   -val
 //					$(this).html('123123');
-            //$('#gcw_valFDtbXg6kP1').val() - usd-rub
+                //$('#gcw_valFDtbXg6kP1').val() - usd-rub
                 //              })
 //	           	console.log($('#month').val()+'-01');
+                gcw_handlerFDtbXg6kP.reload();
                 send_request($('#month').val() + '-01');
+
+
             }
         )
     });
