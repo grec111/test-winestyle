@@ -5,33 +5,36 @@
 
 <script type="text/javascript">
     $(document).ready(function() {
-        send_request('2017-05-01');
+        send_request('2017-06-01');
         $('.send_data').click(function () {
 //				$('#table #salary').each(function() {
 				  //  $(this).html() / 1   -val
 //					$(this).html('123123');
   //              })
-//            	console.log($('#month').val());
-               send_request('2017-05-01');
+//	           	console.log($('#month').val()+'-01');
+				send_request($('#month').val()+'-01');
             }
         )
-//		$('#send_time')
     });
 
     function send_request(data) {
-        $.ajax({
-            type: 'GET',
-            url: 'index.php',
-            data: {'month': data},
-            success: function (result) {
-                console.log(result);
-                var html = '<tr></tr><th>Имя</th><th>Фамилия</th><th>Должность</th><th>ЗП</th><th>Бонус</th><th>Фото</th><th>Дата</th></tr>';
-                $.each($.parseJSON(result), function (index, element) {
-                    html +='<tr><td>' +element.Worker_Name+'</td><td>' +element.Worker_LastName+ '</td><td>'+element.Worker_Prof+'</td><td  id="salary">' + element.Salary + '</td><td>'+ element.Bonus +'</td><td>'+element.Avatar+'</td><td>'+element.Date_s+'</td></tr>';
-                });
-                $('#table > tbody').append(html);
-            }
-        })
+        $( "tr" ).empty();
+		$.ajax({
+        type: 'GET',
+        url: 'index.php',
+        data: {'month': data},
+        success: function (result) {
+            if (result!="Error-Not Found-404-Fatality")
+			{
+			console.log(result);
+            var html = '<tr></tr><th>Имя</th><th>Фамилия</th><th>Должность</th><th>ЗП</th><th>Бонус</th><th>Фото</th><th>Дата</th></tr>';
+            $.each($.parseJSON(result), function (index, element) {
+                html +='<tr><td>' +element.Worker_Name+'</td><td>' +element.Worker_LastName+ '</td><td>'+element.Worker_Prof+'</td><td  id="salary">' + element.Salary + '</td><td>'+ element.Bonus +'</td><td>'+element.Avatar+'</td><td>'+element.Date_s+'</td></tr>';
+            });
+			}else html="Error-Not Found-404-Fatality";
+            $('#table > tbody').append(html);
+        }
+		});
     }
 
 </script>
@@ -47,19 +50,19 @@
 <body>
 
 <h1>Вывод зарплат сотрудников</h1>
-выводим данные в таблицу
-<input type="button" value="TEST" id="test_button">
 
-
-<table class="table table-bordered" id="table">
+<table class="table-bordered" id="table">
 	<tbody>
 	</tbody>
 </table>
-<input type="month" name="month" id="month">
-<input type="submit" value="Показать за месяц"></p>
-<button class="send_data">Послать запрос</button>
 
-<a href="#openModal">Добавить нового сотрудника</a>
+<p>
+<input type="month" name="month" id="month">
+<input type="submit" value="Показать за месяц" class="send_data">
+</p>
+<form action="#openModal">
+	<input type="submit" class="button_active" value="Добавить нового сотрудника">
+</form>
 
 <div id="openModal" class="modalDialog">
 	<div>
