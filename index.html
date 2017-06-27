@@ -12,22 +12,17 @@
             }
         )
         $('.change_currecy_rub').click(function () {
-            //$('#label').val()
-            var usd_curr=1;
-            if($('#label').val()=="usd")
-            {
-                usd_curr=$('#gcw_valFDtbXg6kP1').val();
-            }else
-            {
-                usd_curr=1/$('#gcw_valFDtbXg6kP1').val();
+            var usd_curr = 1;
+            if ($('#label').val() == "usd") {
+                usd_curr = $('#gcw_valFDtbXg6kP1').val();
+            } else {
+                usd_curr = 1 / $('#gcw_valFDtbXg6kP1').val();
             }
             $('#table #salary').each(function () {
-
                     $(this).html($(this).html() / usd_curr);
                 }
             )
         })
-
     });
     function send_request(data) {
         $("tr").empty();
@@ -92,6 +87,8 @@
     </div>
 </div>
 
+<p><input name="ch_currency" type="radio" value="Rub" checked>Rub</p>
+<p><input name="ch_currency" type="radio" value="Usd">Usd</p>
 
 <div id='gcw_mainFDtbXg6kP' class='gcw_mainFDtbXg6kP'></div>
 
