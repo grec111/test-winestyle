@@ -44,12 +44,21 @@ function fill_from_file()
         mysqli_query($link_db, "INSERT INTO Workers (Worker_Name,Worker_LastName,Worker_Prof,Salary,Avatar) VALUES ('$w_ar[0]','$w_ar[1]','$prof_ar[$ran_p]','$ran_s','$ava')");
         //random payments for all - for 3 montths
         $bonus = 0;
-        if (rand(0, 7) == 3) $bonus = $ran_s / 10;
-        mysqli_query($link_db, "INSERT INTO Payment (id_worker ,Salary ,Bonus , Date_s) VALUES ('$id_inc','$ran_s+$bonus','$bonus','2017-06-01')");
-        if (rand(0, 7) == 3) $bonus = $ran_s / 10;
-        mysqli_query($link_db, "INSERT INTO Payment (id_worker ,Salary ,Bonus , Date_s) VALUES ('$id_inc','$ran_s+$bonus','$bonus','2017-05-01')");
-        if (rand(0, 7) == 3) $bonus = $ran_s / 10;
-        mysqli_query($link_db, "INSERT INTO Payment (id_worker ,Salary ,Bonus , Date_s) VALUES ('$id_inc','$ran_s+$bonus','$bonus','2017-07-01')");
+        if (rand(0, 7) == 3) {
+            $bonus = $ran_s / 10;
+            $ran_s += $bonus;
+        }
+        mysqli_query($link_db, "INSERT INTO Payment (id_worker ,Salary ,Bonus , Date_s) VALUES ('$id_inc','$ran_s','$bonus','2017-06-01')");
+        if (rand(0, 7) == 3) {
+            $bonus = $ran_s / 10;
+            $ran_s += $bonus;
+        }
+        mysqli_query($link_db, "INSERT INTO Payment (id_worker ,Salary ,Bonus , Date_s) VALUES ('$id_inc','$ran_s','$bonus','2017-05-01')");
+        if (rand(0, 7) == 3) {
+            $bonus = $ran_s / 10;
+            $ran_s += $bonus;
+        }
+        mysqli_query($link_db, "INSERT INTO Payment (id_worker ,Salary ,Bonus , Date_s) VALUES ('$id_inc','$ran_s','$bonus','2017-07-01')");
         $id_inc++;
     }
     mysqli_close($link_db);
