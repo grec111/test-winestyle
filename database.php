@@ -44,6 +44,7 @@ function fill_from_file()
         $ran_s = rand(10, 30) * 1000;
         $ava = addslashes(url_to_images . $id_inc . '.jpg');
         mysqli_query($link_db, "INSERT INTO Workers (Worker_Name,Worker_LastName,Worker_Prof,Salary,Avatar) VALUES ('$w_ar[0]','$w_ar[1]','$prof_ar[$ran_p]','$ran_s','$ava')");
+        resize($ava);
         //random payments for all - for 3 montths
         $bonus = 0;
         if (rand(0, 7) == 3) {
@@ -77,8 +78,10 @@ function get_table($month)
             $work_table_view[] = mysqli_fetch_assoc($res_quer);
             $temp_row--;
         }
+        mysqli_close($link_db);
         return $work_table_view;
     }
+    mysqli_close($link_db);
     return false;
 }
 
@@ -91,6 +94,7 @@ function get_prof_data()
     while ($row = mysqli_fetch_assoc($res_quer)) {
         $ar_prof[] = $row['Prof_name'];
     }
+    mysqli_close($link_db);
     return $ar_prof;
 }
 
@@ -118,7 +122,11 @@ function new_assoc($new_assoc)
     $date_ad = $today['year'] . '-' . $today['mon'] . '-' . '01';
     $last_id = mysqli_insert_id($link_db);
     $query = "INSERT INTO Payment (id_worker ,Salary ,Bonus , Date_s) VALUES ('$last_id','$new_assoc_data[3]',0,'$date_ad')";
-    if (mysqli_query($link_db, $query)) return true;
+    if (mysqli_query($link_db, $query)) {
+        mysqli_close($link_db);
+        return true;
+    }
+    mysqli_close($link_db);
     return false;
 }
 
@@ -129,9 +137,65 @@ function prem_bonus($prem_bonus)
     $prem_bonus_data[1] = intval($prem_bonus_data[1]);
     if ($prem_bonus_data[1] == 0) return false;
     $query = "UPDATE Payment LEFT JOIN Workers ON Payment.id_worker=Workers.id SET Payment.Bonus='$prem_bonus_data[1]' WHERE Workers.Worker_Prof='$prem_bonus_data[0]' AND Payment.Date_s='$prem_bonus_data[2]'";
-    if (mysqli_query($link_db, $query)) return true;
+    if (mysqli_query($link_db, $query)) {
+        mysqli_close($link_db);
+        return true;
+    }
+    mysqli_close($link_db);
     return false;
 }
 
-?>
+function resize($img_path)
+{
+    $thumb_directory = str_replace('http://localhost/', 'c:/xampp/htdocs/', $img_path);        //Папка для миниатюр
+    $path = $thumb_directory;
+    $newwidth = 60;
+    $newheight = 60;
 
+    if (!file_exists($path))
+        return false;
+
+    $ext = strtolower(pathinfo($path, PATHINFO_EXTENSION));
+
+    if ($ext == 'jpg' || $ext == 'jpeg')
+        $img = imagecreatefromjpeg($path);
+    elseif ($ext == 'gif')
+        $img = imagecreatefromgif($path);
+    elseif ($ext == 'png')
+        $img = imagecreatefrompng($path);
+    else
+        return false;
+
+    $size = getimagesize($path);
+    $width = $size[0];
+    $height = $size[1];
+
+    if (!($newwidth && $newheight)) {
+        if ($newwidth)
+            $newheight = (int)($height * ($newwidth / $width));
+        elseif ($newheight)
+            $newwidth = (int)($width * ($newheight / $height));
+        else {
+            $newwidth = 100;
+            $newheight = 100;
+        }
+    }
+    $im = imagecreatetruecolor($newwidth, $newheight);
+
+    imagecopyresized($im, $img, 0, 0, 0, 0, $newwidth, $newheight, $width, $height);
+    header("Content-type: {$size['mime']}");
+
+    if ($ext == 'jpg' || $ext == 'jpeg') {
+        imagejpeg($im, 'c:/xampp/htdocs/test-winestyle/css/images/m' . end(explode('/', $img_path)));
+    }
+    if ($ext == 'gif') {
+        imagegif($im);
+    }
+    if ($ext == 'png') {
+        imagepng($im);
+    }
+    imagedestroy($im);
+}
+
+
+?>
