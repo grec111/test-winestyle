@@ -34,10 +34,9 @@
                 }
             )
         })
+        //новый сотрудник
         $('#close').click(function () {
-//новый сотрудник
             var str_new_assoc = $('#name_assoc').val() + ',' + $('#last_name_assoc').val() + ',' + $('#sel_prof').val() + ',' + $('#inp_salary').val() + ',' + $('#in_date').val();
-            alert(str_new_assoc);
             $.ajax({
                 type: 'GET',
                 url: 'index.php',
@@ -60,10 +59,24 @@
             update_prof($('#sel_prof_prem'))
         )
 //выписать премию
+        $('#close_prem').click(function () {
+            var temp_date = $('#month').val() + '-01';
+            var prem_bonus = $('#sel_prof_prem').val() + ',' + $('#prem_bonus').val() + ',' + temp_date;
+            $.ajax({
+                type: 'GET',
+                url: 'index.php',
+                data: {'prem_bonus': prem_bonus},
+                success: function (result_p) {
+                    console.log(result_p);
+                    if (result_p == true) {
+                        alert("Success");
 
+                    } else alert("Error");
+                }
+            });
+        })
 
-    })
-    ;
+    });
     //выбор месяца
     function send_request(data) {
         $("tr").empty();
@@ -80,6 +93,7 @@
             }
         });
     }
+    //выборка профессий
     function update_prof(id_sel) {
         var list_opt = id_sel;
         list_opt.empty();
@@ -88,7 +102,7 @@
             url: 'index.php',
             data: {'prof': 'yes'},
             success: function (result_p) {
-                    console.log(result_p);
+                console.log(result_p);
                 var parser_res = $.parseJSON(result_p);
                 $.each(parser_res, function (index, value) {
                     list_opt.append(new Option(value, value));
@@ -119,7 +133,7 @@
 
 <!-- месяц для таблицы -->
 <p>
-    <input type="month" name="month" id="month">
+    <input type="month" name="month" id="month" value="2017-06">
     <input type="submit" value="Показать за месяц" class="send_data">
 </p>
 
@@ -156,7 +170,7 @@
         <p><select id="sel_prof_prem">
         </select></p>
         <p><input id="prem_bonus" type="number" value="Введите бонус"/></p>
-        <a id="close" title="Закрыть" href="#close">Добавить</a>
+        <a id="close_prem" title="Закрыть" href="#close">Добавить</a>
     </div>
 </div>
 

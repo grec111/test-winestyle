@@ -113,9 +113,20 @@ function new_assoc($new_assoc)
     $query = "INSERT INTO Workers (Worker_Name,Worker_LastName,Worker_Prof,Salary,Avatar) VALUES ('$new_assoc_data[0]','$new_assoc_data[1]','$new_assoc_data[2]','$new_assoc_data[3]','$new_assoc_data[4]')";
     mysqli_query($link_db, $query);
     $today = getdate();
-    $date_ad=$today['year'].'-'.$today['mon'].'-'.$today['mday'];
-    $last_id=mysqli_insert_id($link_db);
+    $date_ad = $today['year'] . '-' . $today['mon'] . '-' . '01';
+    $last_id = mysqli_insert_id($link_db);
     $query = "INSERT INTO Payment (id_worker ,Salary ,Bonus , Date_s) VALUES ('$last_id','$new_assoc_data[3]',0,'$date_ad')";
+    if (mysqli_query($link_db, $query)) return true;
+    return false;
+}
+
+function prem_bonus($prem_bonus)
+{
+    $prem_bonus_data = explode(',', $prem_bonus);
+    $link_db = db_connect('WINE');
+    $prem_bonus_data[1] = intval($prem_bonus_data[1]);
+    if ($prem_bonus_data[1] == 0) return false;
+    $query = "UPDATE Payment LEFT JOIN Workers ON Payment.id_worker=Workers.id SET Payment.Bonus='$prem_bonus_data[1]' WHERE Workers.Worker_Prof='$prem_bonus_data[0]' AND Payment.Date_s='$prem_bonus_data[2]'";
     if (mysqli_query($link_db, $query)) return true;
     return false;
 }
