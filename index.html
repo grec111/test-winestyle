@@ -2,6 +2,8 @@
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
 
 <script type="text/javascript">
     $(document).ready(function () {
@@ -14,16 +16,33 @@
         )
         $('input[type=radio][name=ch_currency]').change(function () {
             var usd_curr = 1;
+            var temp_usd_curr = Math.round($('#gcw_valFDtbXg6kP1').val());
             if (this.value === 'Usd') {
-                usd_curr = $('#gcw_valFDtbXg6kP1').val();
+                usd_curr = temp_usd_curr;
             }
             else if (this.value === 'Rub') {
-                usd_curr = 1 / $('#gcw_valFDtbXg6kP1').val();
+                usd_curr = 1 / temp_usd_curr;
             }
             $('#table #salary').each(function () {
-                    $(this).html($(this).html() / usd_curr);
+                    var temp_sal = $(this).html() / usd_curr;
+                    $(this).html(temp_sal);
                 }
             )
+        })
+        $('.button_active').click(function () {
+            $.ajax({
+                type: 'GET',
+                url: 'index.php',
+                data: {'prof': 'yes'},
+                success: function (result_p) {
+                    console.log(result_p);
+                    var parser_res = $.parseJSON(result_p);
+                    var list_opt=$('#sel_prof');
+                    $.each(parser_res, function (index, value) {
+                        list_opt.append(new Option(value,value));
+                    });
+                }
+            });
         })
     });
     function send_request(data) {
@@ -33,13 +52,10 @@
             url: 'index.php',
             data: {'month': data},
             success: function (result) {
-                if (result != "Error-Not Found-404-Fatality") {
-                    console.log(result);
-                    var html = '<tr></tr><th>Имя</th><th>Фамилия</th><th>Должность</th><th>ЗП</th><th>Бонус</th><th>Фото</th><th>Дата</th></tr>';
-                    $.each($.parseJSON(result), function (index, element) {
-                        html += '<tr><td>' + element.Worker_Name + '</td><td>' + element.Worker_LastName + '</td><td>' + element.Worker_Prof + '</td><td  id="salary">' + element.Salary+element.Bonus + '</td><td>' + element.Bonus + '</td><td>' + element.Avatar + '</td><td>' + element.Date_s + '</td></tr>';
-                    });
-                } else html = "Error-Not Found-404-Fatality";
+                var html = '<tr></tr><th>Имя</th><th>Фамилия</th><th>Должность</th><th>ЗП</th><th>Бонус</th><th>Фото</th><th>Дата</th></tr>';
+                $.each($.parseJSON(result), function (index, element) {
+                    html += '<tr><td align="center">' + element.Worker_Name + '</td><td align="center">' + element.Worker_LastName + '</td><td align="center">' + element.Worker_Prof + '</td><td  id="salary" width="5%" align="center">' + element.Salary + '</td><td align="center">' + element.Bonus + '</td><td align="center">' + element.Avatar + '</td><td align="center">' + element.Date_s + '</td></tr>';
+                });
                 $('#table > tbody').append(html);
             }
         });
@@ -78,12 +94,22 @@
     <div>
         <a href="#close" title="Закрыть" class="close">X</a>
         <h2>Модальное окно</h2>
+        <p><input name="name_assoc" type="text" value="Введите Имя"/></p>
+        <p><input name="name_assoc" type="text" value="Введите Фамилию"/></p>
+        подгрузка из бд
+        <p><select id="sel_prof">
+        </select></p>
+        <p><input name="name_assoc" type="text" value="Введите Зп"/></p>
+        <p><input name="name_assoc" type="url" value="Укажите адресс на фото"/></p>
+        <a id="close" title="Закрыть" href="#close">Добавить</a>
 
     </div>
 </div>
+
+
 <div id="radio_cl">
-<p><input class="ch_currency" name="ch_currency" type="radio" value="Rub" checked>Rub</p>
-<p><input class="ch_currency" name="ch_currency" type="radio" value="Usd">Usd</p>
+    <p><input class="ch_currency" name="ch_currency" type="radio" value="Rub" checked>Rub</p>
+    <p><input class="ch_currency" name="ch_currency" type="radio" value="Usd">Usd</p>
 </div>
 <div id='gcw_mainFDtbXg6kP' class='gcw_mainFDtbXg6kP'></div>
 

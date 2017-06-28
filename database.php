@@ -68,7 +68,7 @@ function fill_from_file()
 function get_table($month)
 {
     $link_db = db_connect('WINE');
-    $query = "SELECT * FROM Payment INNER JOIN Workers ON Payment.id_worker=Workers.id WHERE Payment.Date_s='$month'";
+    $query = "SELECT * FROM Workers INNER JOIN Payment ON Workers.id=Payment.id_worker WHERE Payment.Date_s='$month'";
     if ($res_quer = mysqli_query($link_db, $query)) {
         $temp_row = mysqli_num_rows($res_quer);
         while ($temp_row > 0) {
@@ -80,4 +80,17 @@ function get_table($month)
     return false;
 }
 
+function get_prof_data()
+{
+    $link_db = db_connect('WINE');
+    $query = "SELECT Prof_name FROM Professions";
+    $res_quer=mysqli_query($link_db,$query);
+    $ar_prof = array();
+    while ($row = mysqli_fetch_assoc($res_quer)) {
+        $ar_prof[] = $row['Prof_name'];
+    }
+    return $ar_prof;
+}
+
 ?>
+

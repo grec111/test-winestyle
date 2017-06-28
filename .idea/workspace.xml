@@ -15,8 +15,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="39" column="170" lean-forward="true" selection-start-line="39" selection-start-column="170" selection-end-line="39" selection-end-column="170" />
+            <state relative-caret-position="341">
+              <caret line="39" column="48" lean-forward="true" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -25,8 +25,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="170">
-              <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+            <state relative-caret-position="119">
+              <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
               <folding />
             </state>
           </provider>
@@ -35,19 +35,21 @@
       <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="70" column="116" lean-forward="true" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="116" />
+            <state relative-caret-position="452">
+              <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
               <folding>
-                <marker date="1498595936206" expanded="true" signature="844:938" ph="CREATE TABLE... Professions" />
-                <marker date="1498595936206" expanded="true" signature="970:1126" ph="CREATE TABLE... Workers" />
-                <marker date="1498595936206" expanded="true" signature="970:1151" ph="CREATE TABLE... Workers" />
-                <marker date="1498595936206" expanded="true" signature="1183:1279" ph="CREATE TABLE... Payment" />
-                <marker date="1498595936206" expanded="true" signature="1329:1419" ph="INSERT INTO Professions... " />
-                <marker date="1498595936206" expanded="true" signature="1756:1897" ph="INSERT INTO Workers... " />
-                <marker date="1498595936206" expanded="true" signature="2108:2213" ph="INSERT INTO Payment... " />
-                <marker date="1498595936206" expanded="true" signature="2354:2459" ph="INSERT INTO Payment... " />
-                <marker date="1498595936206" expanded="true" signature="2600:2705" ph="INSERT INTO Payment... " />
-                <marker date="1498595936206" expanded="true" signature="2860:2962" ph="SELECT * FRO... Payment" />
+                <marker date="1498642110199" expanded="true" signature="844:938" ph="CREATE TABLE... Professions" />
+                <marker date="1498642110199" expanded="true" signature="970:1126" ph="CREATE TABLE... Workers" />
+                <marker date="1498642110199" expanded="true" signature="970:1151" ph="CREATE TABLE... Workers" />
+                <marker date="1498642110199" expanded="true" signature="1183:1279" ph="CREATE TABLE... Payment" />
+                <marker date="1498642110199" expanded="true" signature="1329:1419" ph="INSERT INTO Professions... " />
+                <marker date="1498642110199" expanded="true" signature="1756:1897" ph="INSERT INTO Workers... " />
+                <marker date="1498642110199" expanded="true" signature="2108:2213" ph="INSERT INTO Payment... " />
+                <marker date="1498642110199" expanded="true" signature="2354:2459" ph="INSERT INTO Payment... " />
+                <marker date="1498642110199" expanded="true" signature="2600:2705" ph="INSERT INTO Payment... " />
+                <marker date="1498642110199" expanded="true" signature="2860:2962" ph="SELECT * FRO... Payment" />
+                <marker date="1498642110199" expanded="true" signature="3334:3366" ph="SELECT * FRO... Profession" />
+                <marker date="1498642110199" expanded="true" signature="3334:3367" ph="SELECT Prof_... Professions" />
               </folding>
             </state>
           </provider>
@@ -65,8 +67,8 @@
         <option value="$PROJECT_DIR$/workers.txt" />
         <option value="$PROJECT_DIR$/temp_db_create-fill from file.php" />
         <option value="$PROJECT_DIR$/scrip.js" />
-        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/database.php" />
+        <option value="$PROJECT_DIR$/index.php" />
         <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
@@ -121,8 +123,8 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -259,11 +261,12 @@
       <workItem from="1498500465730" duration="1649000" />
       <workItem from="1498540246335" duration="19989000" />
       <workItem from="1498561927710" duration="18143000" />
+      <workItem from="1498627797140" duration="15607000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="67698000" />
+    <option name="totallyTimeSpent" value="83305000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -275,12 +278,12 @@
       <window_info id="PHP-CGI Server" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39934713" sideWeight="0.50238097" order="10" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33188248" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33188248" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25136018" sideWeight="0.49761903" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25136018" sideWeight="0.49761903" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -298,17 +301,48 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="43" />
+      <option name="time" value="55" />
     </breakpoint-manager>
-    <watches-manager>
-      <configuration name="PhpLocalRunConfigurationType">
-        <watch expression="$work_table_view" language="PHP" />
-        <watch expression="rand(0, 7)" language="PHP" />
-        <watch expression="$ran_s+$bonus" language="PHP" />
-      </configuration>
-    </watches-manager>
+    <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/database.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1190">
+          <caret line="70" column="116" lean-forward="true" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="116" />
+          <folding>
+            <marker date="1498642110199" expanded="true" signature="844:938" ph="CREATE TABLE... Professions" />
+            <marker date="1498642110199" expanded="true" signature="970:1126" ph="CREATE TABLE... Workers" />
+            <marker date="1498642110199" expanded="true" signature="970:1151" ph="CREATE TABLE... Workers" />
+            <marker date="1498642110199" expanded="true" signature="1183:1279" ph="CREATE TABLE... Payment" />
+            <marker date="1498642110199" expanded="true" signature="1329:1419" ph="INSERT INTO Professions... " />
+            <marker date="1498642110199" expanded="true" signature="1756:1897" ph="INSERT INTO Workers... " />
+            <marker date="1498642110199" expanded="true" signature="2108:2213" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2354:2459" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2600:2705" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2860:2962" ph="SELECT * FRO... Payment" />
+            <marker date="1498642110199" expanded="true" signature="3334:3366" ph="SELECT * FRO... Profession" />
+            <marker date="1498642110199" expanded="true" signature="3334:3367" ph="SELECT Prof_... Professions" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -330,16 +364,18 @@
         <state relative-caret-position="1156">
           <caret line="68" column="31" lean-forward="false" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="31" />
           <folding>
-            <marker date="1498595936206" expanded="true" signature="844:938" ph="CREATE TABLE... Professions" />
-            <marker date="1498595936206" expanded="true" signature="970:1126" ph="CREATE TABLE... Workers" />
-            <marker date="1498595936206" expanded="true" signature="970:1151" ph="CREATE TABLE... Workers" />
-            <marker date="1498595936206" expanded="true" signature="1183:1279" ph="CREATE TABLE... Payment" />
-            <marker date="1498595936206" expanded="true" signature="1329:1419" ph="INSERT INTO Professions... " />
-            <marker date="1498595936206" expanded="true" signature="1756:1897" ph="INSERT INTO Workers... " />
-            <marker date="1498595936206" expanded="true" signature="2108:2213" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2354:2459" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2600:2705" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2860:2962" ph="SELECT * FRO... Payment" />
+            <marker date="1498642110199" expanded="true" signature="844:938" ph="CREATE TABLE... Professions" />
+            <marker date="1498642110199" expanded="true" signature="970:1126" ph="CREATE TABLE... Workers" />
+            <marker date="1498642110199" expanded="true" signature="970:1151" ph="CREATE TABLE... Workers" />
+            <marker date="1498642110199" expanded="true" signature="1183:1279" ph="CREATE TABLE... Payment" />
+            <marker date="1498642110199" expanded="true" signature="1329:1419" ph="INSERT INTO Professions... " />
+            <marker date="1498642110199" expanded="true" signature="1756:1897" ph="INSERT INTO Workers... " />
+            <marker date="1498642110199" expanded="true" signature="2108:2213" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2354:2459" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2600:2705" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2860:2962" ph="SELECT * FRO... Payment" />
+            <marker date="1498642110199" expanded="true" signature="3334:3366" ph="SELECT * FRO... Profession" />
+            <marker date="1498642110199" expanded="true" signature="3334:3367" ph="SELECT Prof_... Professions" />
           </folding>
         </state>
       </provider>
@@ -350,16 +386,18 @@
         <state relative-caret-position="272">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <marker date="1498595936206" expanded="true" signature="844:938" ph="CREATE TABLE... Professions" />
-            <marker date="1498595936206" expanded="true" signature="970:1126" ph="CREATE TABLE... Workers" />
-            <marker date="1498595936206" expanded="true" signature="970:1151" ph="CREATE TABLE... Workers" />
-            <marker date="1498595936206" expanded="true" signature="1183:1279" ph="CREATE TABLE... Payment" />
-            <marker date="1498595936206" expanded="true" signature="1329:1419" ph="INSERT INTO Professions... " />
-            <marker date="1498595936206" expanded="true" signature="1756:1897" ph="INSERT INTO Workers... " />
-            <marker date="1498595936206" expanded="true" signature="2108:2213" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2354:2459" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2600:2705" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2860:2962" ph="SELECT * FRO... Payment" />
+            <marker date="1498642110199" expanded="true" signature="844:938" ph="CREATE TABLE... Professions" />
+            <marker date="1498642110199" expanded="true" signature="970:1126" ph="CREATE TABLE... Workers" />
+            <marker date="1498642110199" expanded="true" signature="970:1151" ph="CREATE TABLE... Workers" />
+            <marker date="1498642110199" expanded="true" signature="1183:1279" ph="CREATE TABLE... Payment" />
+            <marker date="1498642110199" expanded="true" signature="1329:1419" ph="INSERT INTO Professions... " />
+            <marker date="1498642110199" expanded="true" signature="1756:1897" ph="INSERT INTO Workers... " />
+            <marker date="1498642110199" expanded="true" signature="2108:2213" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2354:2459" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2600:2705" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2860:2962" ph="SELECT * FRO... Payment" />
+            <marker date="1498642110199" expanded="true" signature="3334:3366" ph="SELECT * FRO... Profession" />
+            <marker date="1498642110199" expanded="true" signature="3334:3367" ph="SELECT Prof_... Professions" />
           </folding>
         </state>
       </provider>
@@ -377,16 +415,18 @@
         <state relative-caret-position="272">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <marker date="1498595936206" expanded="true" signature="844:938" ph="CREATE TABLE... Professions" />
-            <marker date="1498595936206" expanded="true" signature="970:1126" ph="CREATE TABLE... Workers" />
-            <marker date="1498595936206" expanded="true" signature="970:1151" ph="CREATE TABLE... Workers" />
-            <marker date="1498595936206" expanded="true" signature="1183:1279" ph="CREATE TABLE... Payment" />
-            <marker date="1498595936206" expanded="true" signature="1329:1419" ph="INSERT INTO Professions... " />
-            <marker date="1498595936206" expanded="true" signature="1756:1897" ph="INSERT INTO Workers... " />
-            <marker date="1498595936206" expanded="true" signature="2108:2213" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2354:2459" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2600:2705" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2860:2962" ph="SELECT * FRO... Payment" />
+            <marker date="1498642110199" expanded="true" signature="844:938" ph="CREATE TABLE... Professions" />
+            <marker date="1498642110199" expanded="true" signature="970:1126" ph="CREATE TABLE... Workers" />
+            <marker date="1498642110199" expanded="true" signature="970:1151" ph="CREATE TABLE... Workers" />
+            <marker date="1498642110199" expanded="true" signature="1183:1279" ph="CREATE TABLE... Payment" />
+            <marker date="1498642110199" expanded="true" signature="1329:1419" ph="INSERT INTO Professions... " />
+            <marker date="1498642110199" expanded="true" signature="1756:1897" ph="INSERT INTO Workers... " />
+            <marker date="1498642110199" expanded="true" signature="2108:2213" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2354:2459" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2600:2705" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2860:2962" ph="SELECT * FRO... Payment" />
+            <marker date="1498642110199" expanded="true" signature="3334:3366" ph="SELECT * FRO... Profession" />
+            <marker date="1498642110199" expanded="true" signature="3334:3367" ph="SELECT Prof_... Professions" />
           </folding>
         </state>
       </provider>
@@ -421,16 +461,18 @@
         <state relative-caret-position="374">
           <caret line="55" column="10" lean-forward="false" selection-start-line="55" selection-start-column="10" selection-end-line="55" selection-end-column="10" />
           <folding>
-            <marker date="1498595936206" expanded="true" signature="844:938" ph="CREATE TABLE... Professions" />
-            <marker date="1498595936206" expanded="true" signature="970:1126" ph="CREATE TABLE... Workers" />
-            <marker date="1498595936206" expanded="true" signature="970:1151" ph="CREATE TABLE... Workers" />
-            <marker date="1498595936206" expanded="true" signature="1183:1279" ph="CREATE TABLE... Payment" />
-            <marker date="1498595936206" expanded="true" signature="1329:1419" ph="INSERT INTO Professions... " />
-            <marker date="1498595936206" expanded="true" signature="1756:1897" ph="INSERT INTO Workers... " />
-            <marker date="1498595936206" expanded="true" signature="2108:2213" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2354:2459" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2600:2705" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2860:2962" ph="SELECT * FRO... Payment" />
+            <marker date="1498642110199" expanded="true" signature="844:938" ph="CREATE TABLE... Professions" />
+            <marker date="1498642110199" expanded="true" signature="970:1126" ph="CREATE TABLE... Workers" />
+            <marker date="1498642110199" expanded="true" signature="970:1151" ph="CREATE TABLE... Workers" />
+            <marker date="1498642110199" expanded="true" signature="1183:1279" ph="CREATE TABLE... Payment" />
+            <marker date="1498642110199" expanded="true" signature="1329:1419" ph="INSERT INTO Professions... " />
+            <marker date="1498642110199" expanded="true" signature="1756:1897" ph="INSERT INTO Workers... " />
+            <marker date="1498642110199" expanded="true" signature="2108:2213" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2354:2459" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2600:2705" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2860:2962" ph="SELECT * FRO... Payment" />
+            <marker date="1498642110199" expanded="true" signature="3334:3366" ph="SELECT * FRO... Profession" />
+            <marker date="1498642110199" expanded="true" signature="3334:3367" ph="SELECT Prof_... Professions" />
           </folding>
         </state>
       </provider>
@@ -472,16 +514,18 @@
         <state relative-caret-position="1156">
           <caret line="68" column="31" lean-forward="false" selection-start-line="68" selection-start-column="15" selection-end-line="68" selection-end-column="31" />
           <folding>
-            <marker date="1498595936206" expanded="true" signature="844:938" ph="CREATE TABLE... Professions" />
-            <marker date="1498595936206" expanded="true" signature="970:1126" ph="CREATE TABLE... Workers" />
-            <marker date="1498595936206" expanded="true" signature="970:1151" ph="CREATE TABLE... Workers" />
-            <marker date="1498595936206" expanded="true" signature="1183:1279" ph="CREATE TABLE... Payment" />
-            <marker date="1498595936206" expanded="true" signature="1329:1419" ph="INSERT INTO Professions... " />
-            <marker date="1498595936206" expanded="true" signature="1756:1897" ph="INSERT INTO Workers... " />
-            <marker date="1498595936206" expanded="true" signature="2108:2213" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2354:2459" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2600:2705" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2860:2962" ph="SELECT * FRO... Payment" />
+            <marker date="1498642110199" expanded="true" signature="844:938" ph="CREATE TABLE... Professions" />
+            <marker date="1498642110199" expanded="true" signature="970:1126" ph="CREATE TABLE... Workers" />
+            <marker date="1498642110199" expanded="true" signature="970:1151" ph="CREATE TABLE... Workers" />
+            <marker date="1498642110199" expanded="true" signature="1183:1279" ph="CREATE TABLE... Payment" />
+            <marker date="1498642110199" expanded="true" signature="1329:1419" ph="INSERT INTO Professions... " />
+            <marker date="1498642110199" expanded="true" signature="1756:1897" ph="INSERT INTO Workers... " />
+            <marker date="1498642110199" expanded="true" signature="2108:2213" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2354:2459" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2600:2705" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2860:2962" ph="SELECT * FRO... Payment" />
+            <marker date="1498642110199" expanded="true" signature="3334:3366" ph="SELECT * FRO... Profession" />
+            <marker date="1498642110199" expanded="true" signature="3334:3367" ph="SELECT Prof_... Professions" />
           </folding>
         </state>
       </provider>
@@ -492,16 +536,18 @@
         <state relative-caret-position="272">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <marker date="1498595936206" expanded="true" signature="844:938" ph="CREATE TABLE... Professions" />
-            <marker date="1498595936206" expanded="true" signature="970:1126" ph="CREATE TABLE... Workers" />
-            <marker date="1498595936206" expanded="true" signature="970:1151" ph="CREATE TABLE... Workers" />
-            <marker date="1498595936206" expanded="true" signature="1183:1279" ph="CREATE TABLE... Payment" />
-            <marker date="1498595936206" expanded="true" signature="1329:1419" ph="INSERT INTO Professions... " />
-            <marker date="1498595936206" expanded="true" signature="1756:1897" ph="INSERT INTO Workers... " />
-            <marker date="1498595936206" expanded="true" signature="2108:2213" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2354:2459" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2600:2705" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2860:2962" ph="SELECT * FRO... Payment" />
+            <marker date="1498642110199" expanded="true" signature="844:938" ph="CREATE TABLE... Professions" />
+            <marker date="1498642110199" expanded="true" signature="970:1126" ph="CREATE TABLE... Workers" />
+            <marker date="1498642110199" expanded="true" signature="970:1151" ph="CREATE TABLE... Workers" />
+            <marker date="1498642110199" expanded="true" signature="1183:1279" ph="CREATE TABLE... Payment" />
+            <marker date="1498642110199" expanded="true" signature="1329:1419" ph="INSERT INTO Professions... " />
+            <marker date="1498642110199" expanded="true" signature="1756:1897" ph="INSERT INTO Workers... " />
+            <marker date="1498642110199" expanded="true" signature="2108:2213" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2354:2459" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2600:2705" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2860:2962" ph="SELECT * FRO... Payment" />
+            <marker date="1498642110199" expanded="true" signature="3334:3366" ph="SELECT * FRO... Profession" />
+            <marker date="1498642110199" expanded="true" signature="3334:3367" ph="SELECT Prof_... Professions" />
           </folding>
         </state>
       </provider>
@@ -519,16 +565,18 @@
         <state relative-caret-position="272">
           <caret line="16" column="0" lean-forward="false" selection-start-line="16" selection-start-column="0" selection-end-line="16" selection-end-column="0" />
           <folding>
-            <marker date="1498595936206" expanded="true" signature="844:938" ph="CREATE TABLE... Professions" />
-            <marker date="1498595936206" expanded="true" signature="970:1126" ph="CREATE TABLE... Workers" />
-            <marker date="1498595936206" expanded="true" signature="970:1151" ph="CREATE TABLE... Workers" />
-            <marker date="1498595936206" expanded="true" signature="1183:1279" ph="CREATE TABLE... Payment" />
-            <marker date="1498595936206" expanded="true" signature="1329:1419" ph="INSERT INTO Professions... " />
-            <marker date="1498595936206" expanded="true" signature="1756:1897" ph="INSERT INTO Workers... " />
-            <marker date="1498595936206" expanded="true" signature="2108:2213" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2354:2459" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2600:2705" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2860:2962" ph="SELECT * FRO... Payment" />
+            <marker date="1498642110199" expanded="true" signature="844:938" ph="CREATE TABLE... Professions" />
+            <marker date="1498642110199" expanded="true" signature="970:1126" ph="CREATE TABLE... Workers" />
+            <marker date="1498642110199" expanded="true" signature="970:1151" ph="CREATE TABLE... Workers" />
+            <marker date="1498642110199" expanded="true" signature="1183:1279" ph="CREATE TABLE... Payment" />
+            <marker date="1498642110199" expanded="true" signature="1329:1419" ph="INSERT INTO Professions... " />
+            <marker date="1498642110199" expanded="true" signature="1756:1897" ph="INSERT INTO Workers... " />
+            <marker date="1498642110199" expanded="true" signature="2108:2213" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2354:2459" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2600:2705" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2860:2962" ph="SELECT * FRO... Payment" />
+            <marker date="1498642110199" expanded="true" signature="3334:3366" ph="SELECT * FRO... Profession" />
+            <marker date="1498642110199" expanded="true" signature="3334:3367" ph="SELECT Prof_... Professions" />
           </folding>
         </state>
       </provider>
@@ -558,37 +606,39 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrip.js" />
-    <entry file="file://$PROJECT_DIR$/index.php">
+    <entry file="file://$PROJECT_DIR$/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="452">
+          <caret line="91" column="0" lean-forward="false" selection-start-line="91" selection-start-column="0" selection-end-line="91" selection-end-column="0" />
+          <folding>
+            <marker date="1498642110199" expanded="true" signature="844:938" ph="CREATE TABLE... Professions" />
+            <marker date="1498642110199" expanded="true" signature="970:1126" ph="CREATE TABLE... Workers" />
+            <marker date="1498642110199" expanded="true" signature="970:1151" ph="CREATE TABLE... Workers" />
+            <marker date="1498642110199" expanded="true" signature="1183:1279" ph="CREATE TABLE... Payment" />
+            <marker date="1498642110199" expanded="true" signature="1329:1419" ph="INSERT INTO Professions... " />
+            <marker date="1498642110199" expanded="true" signature="1756:1897" ph="INSERT INTO Workers... " />
+            <marker date="1498642110199" expanded="true" signature="2108:2213" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2354:2459" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2600:2705" ph="INSERT INTO Payment... " />
+            <marker date="1498642110199" expanded="true" signature="2860:2962" ph="SELECT * FRO... Payment" />
+            <marker date="1498642110199" expanded="true" signature="3334:3366" ph="SELECT * FRO... Profession" />
+            <marker date="1498642110199" expanded="true" signature="3334:3367" ph="SELECT Prof_... Professions" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/database.php">
+    <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="70" column="116" lean-forward="true" selection-start-line="70" selection-start-column="14" selection-end-line="70" selection-end-column="116" />
-          <folding>
-            <marker date="1498595936206" expanded="true" signature="844:938" ph="CREATE TABLE... Professions" />
-            <marker date="1498595936206" expanded="true" signature="970:1126" ph="CREATE TABLE... Workers" />
-            <marker date="1498595936206" expanded="true" signature="970:1151" ph="CREATE TABLE... Workers" />
-            <marker date="1498595936206" expanded="true" signature="1183:1279" ph="CREATE TABLE... Payment" />
-            <marker date="1498595936206" expanded="true" signature="1329:1419" ph="INSERT INTO Professions... " />
-            <marker date="1498595936206" expanded="true" signature="1756:1897" ph="INSERT INTO Workers... " />
-            <marker date="1498595936206" expanded="true" signature="2108:2213" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2354:2459" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2600:2705" ph="INSERT INTO Payment... " />
-            <marker date="1498595936206" expanded="true" signature="2860:2962" ph="SELECT * FRO... Payment" />
-          </folding>
+        <state relative-caret-position="119">
+          <caret line="7" column="5" lean-forward="true" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="39" column="170" lean-forward="true" selection-start-line="39" selection-start-column="170" selection-end-line="39" selection-end-column="170" />
+        <state relative-caret-position="341">
+          <caret line="39" column="48" lean-forward="true" selection-start-line="39" selection-start-column="48" selection-end-line="39" selection-end-column="48" />
           <folding />
         </state>
       </provider>
