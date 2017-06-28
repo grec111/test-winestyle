@@ -46,11 +46,9 @@
                     console.log(result_p);
                     if (result_p == true) {
                         alert("Success");
-//                        var html_t=$('#table > tbody').html();
                         var html_t = '';
                         var temp_date = $('#month').val() + '-01';
-
-                        html_t = '<tr><td align="center">' + $('#name_assoc').val() + '</td><td align="center">' + $('#last_name_assoc').val() + '</td><td align="center">' + $('#sel_prof').val() + '</td><td  id="salary" width="5%" align="center">' + $('#inp_salary').val() + '</td><td align="center">' + 0 + '</td><td align="center">' + '' + '</td><td align="center">' + temp_date + '</td></tr>';
+                        html_t = '<tr><td align="center">' + $('#name_assoc').val() + '</td><td align="center">' + $('#last_name_assoc').val() + '</td><td align="center">' + $('#sel_prof').val() + '</td><td  id="salary" width="5%" align="center">' + $('#inp_salary').val() + '</td><td align="center">' + 0 + '</td><td align="center">' + '</td><td align="center"><a rel="lightbox-mygallery" href="' + '' + '"><img src="' + '' + '"</a>' + '</td><td align="center">' + temp_date + '</td></tr>';
                         $('#table > tbody').append(html_t);
                     } else alert("Error");
                 }
@@ -100,6 +98,7 @@
             }
         });
     }
+
     //выборка профессий
     function update_prof(id_sel) {
         var list_opt = id_sel;
@@ -117,7 +116,6 @@
             }
         });
     }
-
 </script>
 
 
@@ -159,7 +157,7 @@
         <p><select id="sel_prof">
         </select></p>
         <p><input id="inp_salary" type="number" value="Введите Зп"/></p>
-        <p><input id="avatar" type="file" value="Укажите адресс на фото"/></p>
+        загрузка фото
         <a id="close" title="Закрыть" href="#close">Добавить</a>
     </div>
 </div>

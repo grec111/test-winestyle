@@ -2,6 +2,8 @@
 define('local_host', 'localhost');
 define('us_er', 'root');
 define('pass_word', '');
+define('url_to_images', 'http://localhost/test-winestyle/css/images/');
+
 
 function db_create_db()
 {
@@ -40,7 +42,7 @@ function fill_from_file()
         $w_ar = explode(',', $workers_data);
         $ran_p = rand(0, 2);
         $ran_s = rand(10, 30) * 1000;
-        $ava = addslashes('/css/images/' . $id_inc . '.jpg');
+        $ava = addslashes(url_to_images . $id_inc . '.jpg');
         mysqli_query($link_db, "INSERT INTO Workers (Worker_Name,Worker_LastName,Worker_Prof,Salary,Avatar) VALUES ('$w_ar[0]','$w_ar[1]','$prof_ar[$ran_p]','$ran_s','$ava')");
         //random payments for all - for 3 montths
         $bonus = 0;
