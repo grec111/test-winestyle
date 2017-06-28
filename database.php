@@ -84,32 +84,41 @@ function get_prof_data()
 {
     $link_db = db_connect('WINE');
     $query = "SELECT Prof_name FROM Professions";
-    $res_quer=mysqli_query($link_db,$query);
+    $res_quer = mysqli_query($link_db, $query);
     $ar_prof = array();
     while ($row = mysqli_fetch_assoc($res_quer)) {
         $ar_prof[] = $row['Prof_name'];
     }
     return $ar_prof;
 }
+
 function clean($str)
 {
     $str = trim($str);
     $str = stripslashes($str);
     $str = strip_tags($str);
     $str = htmlspecialchars($str);
-    if ($str="") return false;
+    if ($str == "") return false;
     return $str;
 }
+
 function new_assoc($new_assoc)
 {
-    $new_assoc_data=explode(',',$new_assoc);
-    for ($i=0;$i++;$i<5)
+    $new_assoc_data = explode(',', $new_assoc);
+    for ($i = 0; $i < 4; $i++)
         if (!clean($new_assoc_data[$i])) return false;
     $link_db = db_connect('WINE');
-    $new_assoc_data[3]=intval($new_assoc_data[3]);
+    $new_assoc_data[3] = intval($new_assoc_data[3]);
+    if ($new_assoc_data[3] == 0) return false;
     $query = "INSERT INTO Workers (Worker_Name,Worker_LastName,Worker_Prof,Salary,Avatar) VALUES ('$new_assoc_data[0]','$new_assoc_data[1]','$new_assoc_data[2]','$new_assoc_data[3]','$new_assoc_data[4]')";
-    if(mysqli_query($link_db,$query)) return true;
+    mysqli_query($link_db, $query);
+    $today = getdate();
+    $date_ad=$today['year'].'-'.$today['mon'].'-'.$today['mday'];
+    $last_id=mysqli_insert_id($link_db);
+    $query = "INSERT INTO Payment (id_worker ,Salary ,Bonus , Date_s) VALUES ('$last_id','$new_assoc_data[3]',0,'$date_ad')";
+    if (mysqli_query($link_db, $query)) return true;
     return false;
 }
+
 ?>
 

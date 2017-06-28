@@ -15,9 +15,9 @@ if (isset($_GET['prof']))
     echo json_encode(get_prof_data());
     unset($_GET['prof']);
 }
+//$_GET['new_assoc']='test,test1,Бухгалтер,10';
 if (isset($_GET['new_assoc']))
 {
-    new_assoc($_GET['new_assoc']);
-    unset($_GET['new_assoc']);
+    echo new_assoc($_GET['new_assoc']);
 }
 ?>
