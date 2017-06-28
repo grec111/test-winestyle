@@ -30,6 +30,8 @@
             )
         })
         $('.button_active').click(function () {
+            var list_opt=$('#sel_prof');
+            list_opt.empty();
             $.ajax({
                 type: 'GET',
                 url: 'index.php',
@@ -37,7 +39,6 @@
                 success: function (result_p) {
                     console.log(result_p);
                     var parser_res = $.parseJSON(result_p);
-                    var list_opt=$('#sel_prof');
                     $.each(parser_res, function (index, value) {
                         list_opt.append(new Option(value,value));
                     });
