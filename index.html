@@ -7,6 +7,7 @@
 
 <script type="text/javascript">
     $(document).ready(function () {
+//по умолчаанию дата текущая
         send_request('2017-06-01');
         $('.send_data').click(function () {
                 gcw_handlerFDtbXg6kP.reload();
@@ -14,6 +15,7 @@
                 send_request($('#month').val() + '-01');
             }
         )
+//смена курса валют
         $('input[type=radio][name=ch_currency]').change(function () {
             var usd_curr = 1;
             var temp_usd_curr = Math.round($('#gcw_valFDtbXg6kP1').val());
@@ -29,23 +31,44 @@
                 }
             )
         })
-        $('.button_active').click(function () {
-            var list_opt=$('#sel_prof');
-            list_opt.empty();
+        $('#close').click(function () {
+//новый сотрудник
+            var str_new_assoc = $('#name_assoc').val() + ',' + $('#last_name_assoc').val() + ',' + $('#sel_prof').val() + ',' + $('#inp_salary').val() + ',' + $('#avatar').val();
+            alert(str_new_assoc);
             $.ajax({
                 type: 'GET',
                 url: 'index.php',
-                data: {'prof': 'yes'},
+                data: {'new_assoc': str_new_assoc},
                 success: function (result_p) {
                     console.log(result_p);
-                    var parser_res = $.parseJSON(result_p);
-                    $.each(parser_res, function (index, value) {
-                        list_opt.append(new Option(value,value));
-                    });
-                }
-            });
-        })
+//                    var parser_res = $.parseJSON(result_p);
+//                    $.each(parser_res, function (index, value) {
+                    //                       list_opt.append(new Option(value, value));
+//                });
+        }
     });
+
+    })
+    //подгрузка профессий из базы
+    $('.button_active').click(function () {
+        var list_opt = $('#sel_prof');
+        list_opt.empty();
+        $.ajax({
+            type: 'GET',
+            url: 'index.php',
+            data: {'prof': 'yes'},
+            success: function (result_p) {
+                console.log(result_p);
+                var parser_res = $.parseJSON(result_p);
+                $.each(parser_res, function (index, value) {
+                    list_opt.append(new Option(value, value));
+                });
+            }
+        });
+    })
+    })
+    ;
+    //выбор месяца
     function send_request(data) {
         $("tr").empty();
         $.ajax({
@@ -95,15 +118,13 @@
     <div>
         <a href="#close" title="Закрыть" class="close">X</a>
         <h2>Модальное окно</h2>
-        <p><input name="name_assoc" type="text" value="Введите Имя"/></p>
-        <p><input name="name_assoc" type="text" value="Введите Фамилию"/></p>
-        подгрузка из бд
+        <p><input id="name_assoc" type="text" value="Введите Имя"/></p>
+        <p><input id="last_name_assoc" type="text" value="Введите Фамилию"/></p>
         <p><select id="sel_prof">
         </select></p>
-        <p><input name="name_assoc" type="text" value="Введите Зп"/></p>
-        <p><input name="name_assoc" type="url" value="Укажите адресс на фото"/></p>
+        <p><input id="inp_salary" type="number" value="Введите Зп"/></p>
+        <p><input id="avatar" type="file" value="Укажите адресс на фото"/></p>
         <a id="close" title="Закрыть" href="#close">Добавить</a>
-
     </div>
 </div>
 

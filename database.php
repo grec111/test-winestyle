@@ -91,6 +91,25 @@ function get_prof_data()
     }
     return $ar_prof;
 }
-
+function clean($str)
+{
+    $str = trim($str);
+    $str = stripslashes($str);
+    $str = strip_tags($str);
+    $str = htmlspecialchars($str);
+    if ($str="") return false;
+    return $str;
+}
+function new_assoc($new_assoc)
+{
+    $new_assoc_data=explode(',',$new_assoc);
+    for ($i=0;$i++;$i<5)
+        if (!clean($new_assoc_data[$i])) return false;
+    $link_db = db_connect('WINE');
+    $new_assoc_data[3]=intval($new_assoc_data[3]);
+    $query = "INSERT INTO Workers (Worker_Name,Worker_LastName,Worker_Prof,Salary,Avatar) VALUES ('$new_assoc_data[0]','$new_assoc_data[1]','$new_assoc_data[2]','$new_assoc_data[3]','$new_assoc_data[4]')";
+    if(mysqli_query($link_db,$query)) return true;
+    return false;
+}
 ?>
 
