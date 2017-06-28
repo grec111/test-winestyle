@@ -29,7 +29,7 @@ function fill_from_file()
     $link_db = db_connect('WINE');
     //create tables
     mysqli_query($link_db, "CREATE TABLE Professions (Prof_name CHAR(30), PRIMARY KEY(Prof_name))COLLATE='utf8_general_ci'");
-    mysqli_query($link_db, "CREATE TABLE Workers (id INT AUTO_INCREMENT,Worker_Name CHAR(30),Worker_LastName CHAR(30),Worker_Prof CHAR(30),Salary INT,Avatar CHAR(30),  PRIMARY KEY(id))COLLATE='utf8_general_ci'");
+    mysqli_query($link_db, "CREATE TABLE Workers (id INT AUTO_INCREMENT,Worker_Name CHAR(30),Worker_LastName CHAR(30),Worker_Prof CHAR(30),Salary INT,Avatar CHAR(255),  PRIMARY KEY(id))COLLATE='utf8_general_ci'");
     mysqli_query($link_db, "CREATE TABLE Payment (id_worker INT ,Salary INT,Bonus INT, Date_s DATE)COLLATE='utf8_general_ci'");
     //fill tables
     mysqli_query($link_db, "INSERT INTO Professions (Prof_name) VALUES ('$prof_ar[0]'),('$prof_ar[1]'),('$prof_ar[2]')");
@@ -40,7 +40,7 @@ function fill_from_file()
         $w_ar = explode(',', $workers_data);
         $ran_p = rand(0, 2);
         $ran_s = rand(10, 30) * 1000;
-        $ava = '/css/images/' . $id_inc . '.jpg';
+        $ava = addslashes('/css/images/' . $id_inc . '.jpg');
         mysqli_query($link_db, "INSERT INTO Workers (Worker_Name,Worker_LastName,Worker_Prof,Salary,Avatar) VALUES ('$w_ar[0]','$w_ar[1]','$prof_ar[$ran_p]','$ran_s','$ava')");
         //random payments for all - for 3 montths
         $bonus = 0;
