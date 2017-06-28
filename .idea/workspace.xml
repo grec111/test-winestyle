@@ -15,8 +15,8 @@
       <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="69" column="42" lean-forward="false" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
+            <state relative-caret-position="459">
+              <caret line="96" column="328" lean-forward="false" selection-start-line="96" selection-start-column="328" selection-end-line="96" selection-end-column="328" />
               <folding />
             </state>
           </provider>
@@ -35,7 +35,7 @@
       <file leaf-file-name="database.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/database.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="401">
+            <state relative-caret-position="619">
               <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
               <folding>
                 <marker date="1498656164240" expanded="true" signature="844:938" ph="CREATE TABLE... Professions" />
@@ -77,9 +77,9 @@
         <option value="$PROJECT_DIR$/workers.txt" />
         <option value="$PROJECT_DIR$/temp_db_create-fill from file.php" />
         <option value="$PROJECT_DIR$/scrip.js" />
-        <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/database.php" />
         <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/index.html" />
       </list>
     </option>
   </component>
@@ -271,12 +271,12 @@
       <workItem from="1498500465730" duration="1649000" />
       <workItem from="1498540246335" duration="19989000" />
       <workItem from="1498561927710" duration="18143000" />
-      <workItem from="1498627797140" duration="27595000" />
+      <workItem from="1498627797140" duration="29705000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="95293000" />
+    <option name="totallyTimeSpent" value="97403000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1696" height="1026" extended-state="6" />
@@ -648,9 +648,17 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/scrip.js" />
+    <entry file="file://$PROJECT_DIR$/index.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/database.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="401">
+        <state relative-caret-position="619">
           <caret line="128" column="0" lean-forward="false" selection-start-line="128" selection-start-column="0" selection-end-line="128" selection-end-column="0" />
           <folding>
             <marker date="1498656164240" expanded="true" signature="844:938" ph="CREATE TABLE... Professions" />
@@ -673,18 +681,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="0" lean-forward="false" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="69" column="42" lean-forward="false" selection-start-line="69" selection-start-column="42" selection-end-line="69" selection-end-column="42" />
+        <state relative-caret-position="459">
+          <caret line="96" column="328" lean-forward="false" selection-start-line="96" selection-start-column="328" selection-end-line="96" selection-end-column="328" />
           <folding />
         </state>
       </provider>

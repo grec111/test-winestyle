@@ -36,6 +36,7 @@
         })
         //новый сотрудник
         $('#close').click(function () {
+
             var str_new_assoc = $('#name_assoc').val() + ',' + $('#last_name_assoc').val() + ',' + $('#sel_prof').val() + ',' + $('#inp_salary').val() + ',' + $('#in_date').val();
             $.ajax({
                 type: 'GET',
@@ -45,7 +46,12 @@
                     console.log(result_p);
                     if (result_p == true) {
                         alert("Success");
+//                        var html_t=$('#table > tbody').html();
+                        var html_t='';
+                        var temp_date = $('#month').val() + '-01';
 
+                        html_t ='<tr><td align="center">' + $('#name_assoc').val()+'</td><td align="center">' +$('#last_name_assoc').val()+'</td><td align="center">' +$('#sel_prof').val()+'</td><td  id="salary" width="5%" align="center">' +$('#inp_salary').val()+'</td><td align="center">' +0+'</td><td align="center">' +''+'</td><td align="center">' +temp_date+ '</td></tr>';
+                        $('#table > tbody').append(html_t);
                     } else alert("Error");
                 }
             });
@@ -70,7 +76,8 @@
                     console.log(result_p);
                     if (result_p == true) {
                         alert("Success");
-
+                        send_request(temp_date);
+                        gcw_handlerFDtbXg6kP.reload();
                     } else alert("Error");
                 }
             });
