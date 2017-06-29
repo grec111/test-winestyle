@@ -35,14 +35,15 @@ $(document).ready(function () {
             url: 'index.php',
             data: {'new_assoc': str_new_assoc},
             success: function (result_p) {
-//                console.log(result_p);
+                console.log(result_p);
                 if (result_p == true) {
                     alert("Success");
                     var html_t = '';
-                    var str = element.Avatar;
-                    var min_ava = str.replace("images/", "images/m");
+//                    var str = 'get-new-avatar-link-here';
+                    var min_ava = '';
+
                     var temp_date = $('#month').val() + '-01';
-                    var html_ava = '<a href="' + str + '" data-lightbox="' + element.Avatar + '"><img src="' + min_ava + '" ></a>';
+                    var html_ava = '<a href="' + min_ava + '" data-lightbox="' + min_ava + '"><img src="' + min_ava + '" ></a>';
                     html_t = '<tr  align="center"><td>' + $('#name_assoc').val() + '</td><td>' + $('#last_name_assoc').val() + '</td><td>' + $('#sel_prof').val() + '</td><td  id="salary">' + $('#inp_salary').val() + '</td><td>' + 0 + '</td><td>'+html_ava+ '</td><td>' + temp_date + '</td></tr>';
                     $('#table > tbody').append(html_t);
                 } else alert("Error");

@@ -19,79 +19,117 @@
 </head>
 <body>
 <div class="container">
-<h1>Вывод зарплат сотрудников</h1>
+    <h1>Вывод зарплат сотрудников</h1>
 
-<!-- основная таблица -->
-<div class="table-responsive">
-<table class="table" id="table">
-    <tbody>
-    </tbody>
-</table>
-</div>
+    <!-- основная таблица -->
+    <div class="table-responsive">
+        <table class="table" id="table">
+            <tbody>
+            </tbody>
+        </table>
+    </div>
     <!-- месяц для таблицы -->
-<p>
-    <input type="month" name="month" id="month" value="2017-06">
-    <input class="btn btn-default" type="submit" value="Показать за месяц" id="send_data">
-</p>
+    <p>
+        <input type="month" name="month" id="month" value="2017-06">
+        <input class="btn btn-default" type="submit" value="Показать за месяц" id="send_data">
+    </p>
 
-<!-- модальное окно для нового воркера -->
 
-<form action="#openModal">
-    <input class="btn btn-default" type="submit" id="button_active" value="Добавить нового сотрудника">
-</form>
+    <!-- модальное окно для нового воркера -->
 
-<div id="openModal" class="modalDialog">
-    <div class="form-group">
-        <a href="#close" title="Закрыть" class="close">X</a>
-        <h2>Укажите данные</h2>
-        <p><input id="name_assoc" type="text" value="Введите Имя"/></p>
-        <p><input id="last_name_assoc" type="text" value="Введите Фамилию"/></p>
-        <p><select id="sel_prof">
-        </select></p>
-        <p><input id="inp_salary" type="number" value="Введите Зп"/></p>
-        загрузка фото
-        <a id="close" title="Закрыть" href="#close">Добавить</a>
-        <button type="submit" class="btn btn-default">Submit</button>
+    <button type="button" class="btn btn-default" type="submit" id="button_active" data-toggle="modal"
+            data-target="#myModal">Добавить нового сотрудника
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <h2>Укажите данные</h2>
+                    <p><input class="form-control" id="name_assoc" type="text" value="Введите Имя"/></p>
+                    <p><input class="form-control" id="last_name_assoc" type="text" value="Введите Фамилию"/></p>
+                    <p><select id="sel_prof">
+                    </select></p>
+                    <p>ЗП<input class="form-control" id="inp_salary" type="number" value="Введите Зп"/></p>
+                    загрузка фото
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Отменить</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="close">Добавить</button>
+                </div>
+            </div>
+
+        </div>
     </div>
-</div>
 
-<!-- модальное окно для премии -->
 
-<form action="#openModal_prem">
-    <input class="btn btn-default" type="submit" id="button_active_prem" value="Выписать премию">
-</form>
 
-<div id="openModal_prem" class="modalDialog">
-    <div >
-        <a href="#close" title="Закрыть" class="close">X</a>
-        <h2>Укажите данные</h2>
-        <p><select id="sel_prof_prem">
-        </select></p>
-        <p><input  id="prem_bonus" type="number" value="Введите бонус"/></p>
-        <a id="close_prem" title="Закрыть" href="#close">Добавить</a>
+
+
+
+
+
+
+    <!-- модальное окно для премии -->
+
+    <button type="button" class="btn btn-default" type="submit" id="button_active_prem" data-toggle="modal"
+            data-target="#myModal_prem">Выписать премию
+    </button>
+
+    <!-- Modal -->
+    <div class="modal fade" id="myModal_prem" role="dialog">
+        <div class="modal-dialog">
+
+            <!-- Modal content-->
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Modal Header</h4>
+                </div>
+                <div class="modal-body">
+                    <h2>Укажите данные</h2>
+                    <p><select id="sel_prof_prem">
+                    </select></p>
+                    <p>Бонус<input class="form-control" id="prem_bonus" type="number" value="Введите бонус"/></p>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Отменить</button>
+                    <button type="button" class="btn btn-default" data-dismiss="modal" id="close_prem">Добавить</button>
+                </div>
+            </div>
+
+        </div>
     </div>
-</div>
 
-<!-- смена валюты+баннер -->
-<div id="radio_cl">
-    <p><input class="ch_currency" name="ch_currency" type="radio" value="Rub" checked>Rub</p>
-    <p><input class="ch_currency" name="ch_currency" type="radio" value="Usd">Usd</p>
-</div>
-<div id='gcw_mainFDtbXg6kP' class='gcw_mainFDtbXg6kP'></div>
 
-<script>function reloadFDtbXg6kP() {
-    var sc = document.getElementById('scFDtbXg6kP');
-    if (sc) sc.parentNode.removeChild(sc);
-    sc = document.createElement('script');
-    sc.type = 'text/javascript';
-    sc.charset = 'UTF-8';
-    sc.async = true;
-    sc.id = 'scFDtbXg6kP';
-    sc.src = 'https://freecurrencyrates.com/ru/widget-horizontal?iso=USDRUB&df=2&p=FDtbXg6kP&v=i&source=cbr&width=220&width_title=110&firstrowvalue=1&thm=aaaaaa,C9C9C9,BBBBBB,dddddd,444444,cccccc,f8f8f8,3383BB,000000&title=%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%B5%D1%80%20%D0%B2%D0%B0%D0%BB%D1%8E%D1%82&tzo=-180';
-    var div = document.getElementById('gcw_mainFDtbXg6kP');
-    div.parentNode.insertBefore(sc, div);
-}
-reloadFDtbXg6kP(); </script>
+    <!-- смена валюты+баннер -->
+    <div id="radio_cl">
+        <p><input class="ch_currency" name="ch_currency" type="radio" value="Rub" checked>Rub</p>
+        <p><input class="ch_currency" name="ch_currency" type="radio" value="Usd">Usd</p>
+    </div>
+    <div id='gcw_mainFDtbXg6kP' class='gcw_mainFDtbXg6kP'></div>
+
+    <script>function reloadFDtbXg6kP() {
+        var sc = document.getElementById('scFDtbXg6kP');
+        if (sc) sc.parentNode.removeChild(sc);
+        sc = document.createElement('script');
+        sc.type = 'text/javascript';
+        sc.charset = 'UTF-8';
+        sc.async = true;
+        sc.id = 'scFDtbXg6kP';
+        sc.src = 'https://freecurrencyrates.com/ru/widget-horizontal?iso=USDRUB&df=2&p=FDtbXg6kP&v=i&source=cbr&width=220&width_title=110&firstrowvalue=1&thm=aaaaaa,C9C9C9,BBBBBB,dddddd,444444,cccccc,f8f8f8,3383BB,000000&title=%D0%9A%D0%BE%D0%BD%D0%B2%D0%B5%D1%80%D1%82%D0%B5%D1%80%20%D0%B2%D0%B0%D0%BB%D1%8E%D1%82&tzo=-180';
+        var div = document.getElementById('gcw_mainFDtbXg6kP');
+        div.parentNode.insertBefore(sc, div);
+    }
+    reloadFDtbXg6kP(); </script>
 
 </div>
 </body>
