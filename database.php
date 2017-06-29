@@ -4,6 +4,8 @@ define('us_er', 'root');
 define('pass_word', '');
 define('url_to_images', 'http://localhost/test-winestyle/css/images/');
 define('local_url_to_images', 'c:/xampp/htdocs/test-winestyle/css/images/');
+define('undef', 'http://localhost/test-winestyle/css/images/undef.jpg');
+
 
 function db_create_db()
 {
@@ -116,6 +118,7 @@ function new_assoc($new_assoc)
     $link_db = db_connect('WINE');
     $new_assoc_data[3] = intval($new_assoc_data[3]);
     if ($new_assoc_data[3] == 0) return false;
+    if (stristr($new_assoc_data[4],'undefined')) $new_assoc_data[4]=undef;
     $query = "INSERT INTO Workers (Worker_Name,Worker_LastName,Worker_Prof,Salary,Avatar) VALUES ('$new_assoc_data[0]','$new_assoc_data[1]','$new_assoc_data[2]','$new_assoc_data[3]','$new_assoc_data[4]')";
     mysqli_query($link_db, $query);
     $today = getdate();

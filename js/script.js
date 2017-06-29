@@ -87,7 +87,7 @@ function send_request(data) {
         url: 'index.php',
         data: {'month': data},
         success: function (result) {
-            var html = '<tr align="center"><td>Имя</td><td>Фамилия</td><td>Должность</td><td>ЗП</td><td>Бонус</td><td>Фото</td><td>Дата</td></tr>';
+            var html = '<tr class="jumbotron text-center"><td>Имя</td><td>Фамилия</td><td>Должность</td><td>ЗП</td><td>Бонус</td><td>Фото</td><td>Дата</td></tr>';
 
             $.each($.parseJSON(result), function (index, element) {
                 var str = element.Avatar;
