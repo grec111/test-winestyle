@@ -26,7 +26,7 @@ $(document).ready(function () {
             }
         )
     })
-    //новый сотрудник
+//новый сотрудник
     $('#close').click(function () {
 
         var str_new_assoc = $('#name_assoc').val() + ',' + $('#last_name_assoc').val() + ',' + $('#sel_prof').val() + ',' + $('#inp_salary').val() + ',' + $('#in_date').val();
@@ -39,11 +39,10 @@ $(document).ready(function () {
                 if (result_p == true) {
                     alert("Success");
                     var html_t = '';
-//                    var str = 'get-new-avatar-link-here';
-                    var min_ava = '';
-
+                    var str = 'http://localhost/test-winestyle/css/images/undef.jpg';
+                    var min_ava = str.replace("images/", "images/m");
                     var temp_date = $('#month').val() + '-01';
-                    var html_ava = '<a href="' + min_ava + '" data-lightbox="' + min_ava + '"><img src="' + min_ava + '" ></a>';
+                    var html_ava = '<a href="' + str + '" data-lightbox="' + str + '"><img src="' + min_ava + '" ></a>';
                     html_t = '<tr  align="center"><td>' + $('#name_assoc').val() + '</td><td>' + $('#last_name_assoc').val() + '</td><td>' + $('#sel_prof').val() + '</td><td  id="salary">' + $('#inp_salary').val() + '</td><td>' + 0 + '</td><td>' + html_ava + '</td><td>' + temp_date + '</td></tr>';
                     $('#table > tbody').append(html_t);
                 } else alert("Error");
@@ -67,7 +66,6 @@ $(document).ready(function () {
             url: 'index.php',
             data: {'prem_bonus': prem_bonus},
             success: function (result_p) {
-                console.log(result_p);
                 if (result_p == true) {
                     alert("Success");
                     send_request(temp_date);
@@ -109,7 +107,6 @@ function update_prof(id_sel) {
         url: 'index.php',
         data: {'prof': 'yes'},
         success: function (result_p) {
-//            console.log(result_p);
             var parser_res = $.parseJSON(result_p);
             $.each(parser_res, function (index, value) {
                 list_opt.append(new Option(value, value));
