@@ -44,7 +44,7 @@ $(document).ready(function () {
 
                     var temp_date = $('#month').val() + '-01';
                     var html_ava = '<a href="' + min_ava + '" data-lightbox="' + min_ava + '"><img src="' + min_ava + '" ></a>';
-                    html_t = '<tr  align="center"><td>' + $('#name_assoc').val() + '</td><td>' + $('#last_name_assoc').val() + '</td><td>' + $('#sel_prof').val() + '</td><td  id="salary">' + $('#inp_salary').val() + '</td><td>' + 0 + '</td><td>'+html_ava+ '</td><td>' + temp_date + '</td></tr>';
+                    html_t = '<tr  align="center"><td>' + $('#name_assoc').val() + '</td><td>' + $('#last_name_assoc').val() + '</td><td>' + $('#sel_prof').val() + '</td><td  id="salary">' + $('#inp_salary').val() + '</td><td>' + 0 + '</td><td>' + html_ava + '</td><td>' + temp_date + '</td></tr>';
                     $('#table > tbody').append(html_t);
                 } else alert("Error");
             }
@@ -81,12 +81,13 @@ $(document).ready(function () {
 //выбор месяца
 function send_request(data) {
     $("tr").empty();
+
     $.ajax({
         type: 'GET',
         url: 'index.php',
         data: {'month': data},
         success: function (result) {
-            var html = '<tr align="center"><th>Имя</th><th>Фамилия</th><th>Должность</th><th>ЗП</th><th>Бонус</th><th>Фото</th><th>Дата</th></tr>';
+            var html = '<tr align="center"><td>Имя</td><td>Фамилия</td><td>Должность</td><td>ЗП</td><td>Бонус</td><td>Фото</td><td>Дата</td></tr>';
 
             $.each($.parseJSON(result), function (index, element) {
                 var str = element.Avatar;
