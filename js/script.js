@@ -4,7 +4,7 @@ $(document).ready(function () {
 
 //по умолчаанию дата текущая
     send_request('2017-06-01');
-    $('.send_data').click(function () {
+    $('#send_data').click(function () {
             gcw_handlerFDtbXg6kP.reload();
             $('#radio_cl').find(':radio[name=ch_currency][value="Rub"]').prop('checked', true);
             send_request($('#month').val() + '-01');
@@ -43,18 +43,18 @@ $(document).ready(function () {
                     var min_ava = str.replace("images/", "images/m");
                     var temp_date = $('#month').val() + '-01';
                     var html_ava = '<a href="' + str + '" data-lightbox="' + element.Avatar + '"><img src="' + min_ava + '" ></a>';
-                    html_t = '<tr><td align="center">' + $('#name_assoc').val() + '</td><td align="center">' + $('#last_name_assoc').val() + '</td><td align="center">' + $('#sel_prof').val() + '</td><td  id="salary" width="5%" align="center">' + $('#inp_salary').val() + '</td><td align="center">' + 0 + '</td><td align="center">'+html_ava+ '</td><td align="center">' + temp_date + '</td></tr>';
+                    html_t = '<tr  align="center"><td>' + $('#name_assoc').val() + '</td><td>' + $('#last_name_assoc').val() + '</td><td>' + $('#sel_prof').val() + '</td><td  id="salary">' + $('#inp_salary').val() + '</td><td>' + 0 + '</td><td>'+html_ava+ '</td><td>' + temp_date + '</td></tr>';
                     $('#table > tbody').append(html_t);
                 } else alert("Error");
             }
         });
     })
 //подгрузка профессий из базы
-    $('.button_active').click(
+    $('#button_active').click(
         update_prof($('#sel_prof'))
     )
 //        button_active_prem
-    $('.button_active_prem').click(
+    $('#button_active_prem').click(
         update_prof($('#sel_prof_prem'))
     )
 //выписать премию
@@ -85,13 +85,13 @@ function send_request(data) {
         url: 'index.php',
         data: {'month': data},
         success: function (result) {
-            var html = '<tr></tr><th>Имя</th><th>Фамилия</th><th>Должность</th><th>ЗП</th><th>Бонус</th><th>Фото</th><th>Дата</th></tr>';
+            var html = '<tr align="center"><th>Имя</th><th>Фамилия</th><th>Должность</th><th>ЗП</th><th>Бонус</th><th>Фото</th><th>Дата</th></tr>';
 
             $.each($.parseJSON(result), function (index, element) {
                 var str = element.Avatar;
                 var min_ava = str.replace("images/", "images/m");
-                var html_ava = '<a href="' + str + '" data-lightbox="' + element.Avatar + '"><img src="' + min_ava + '" ></a>';
-                html += '<tr><td align="center">' + element.Worker_Name + '</td><td align="center">' + element.Worker_LastName + '</td><td align="center">' + element.Worker_Prof + '</td><td  id="salary" width="5%" align="center">' + element.Salary + '</td><td align="center">' + element.Bonus + '</td><td align="center">' + html_ava + '</td><td align="center">' + element.Date_s + '</td></tr>';
+                var html_ava = '<a href="' + str + '" data-lightbox="' + element.Avatar + '"><img class="img-rounded" src="' + min_ava + '" ></a>';
+                html += '<tr align="center"><td>' + element.Worker_Name + '</td><td>' + element.Worker_LastName + '</td><td>' + element.Worker_Prof + '</td><td  id="salary">' + element.Salary + '</td><td>' + element.Bonus + '</td><td>' + html_ava + '</td><td>' + element.Date_s + '</td></tr>';
             });
             $('#table > tbody').append(html);
         }

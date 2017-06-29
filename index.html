@@ -1,12 +1,13 @@
 ﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
         "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-<script type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="http://localhost/test-winestyle/js/script.js"></script>
 <script src="http://localhost/test-winestyle/js/jquery-1.11.0.min.js"></script>
 <script src="http://localhost/test-winestyle/js/lightbox.min.js"></script>
-
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
 
 <head>
     <meta http-equiv="Content-type" content="text/html; charset=utf-8"/>
@@ -17,29 +18,30 @@
           integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 </head>
 <body>
-
+<div class="container">
 <h1>Вывод зарплат сотрудников</h1>
 
 <!-- основная таблица -->
-<table class="table-bordered" id="table">
+<div class="table-responsive">
+<table class="table" id="table">
     <tbody>
     </tbody>
 </table>
-
-<!-- месяц для таблицы -->
+</div>
+    <!-- месяц для таблицы -->
 <p>
     <input type="month" name="month" id="month" value="2017-06">
-    <input type="submit" value="Показать за месяц" class="send_data">
+    <input class="btn btn-default" type="submit" value="Показать за месяц" id="send_data">
 </p>
 
 <!-- модальное окно для нового воркера -->
 
 <form action="#openModal">
-    <input type="submit" class="button_active" value="Добавить нового сотрудника">
+    <input class="btn btn-default" type="submit" id="button_active" value="Добавить нового сотрудника">
 </form>
 
 <div id="openModal" class="modalDialog">
-    <div>
+    <div class="form-group">
         <a href="#close" title="Закрыть" class="close">X</a>
         <h2>Укажите данные</h2>
         <p><input id="name_assoc" type="text" value="Введите Имя"/></p>
@@ -49,22 +51,23 @@
         <p><input id="inp_salary" type="number" value="Введите Зп"/></p>
         загрузка фото
         <a id="close" title="Закрыть" href="#close">Добавить</a>
+        <button type="submit" class="btn btn-default">Submit</button>
     </div>
 </div>
 
 <!-- модальное окно для премии -->
 
 <form action="#openModal_prem">
-    <input type="submit" class="button_active_prem" value="Выписать премию">
+    <input class="btn btn-default" type="submit" id="button_active_prem" value="Выписать премию">
 </form>
 
 <div id="openModal_prem" class="modalDialog">
-    <div>
+    <div >
         <a href="#close" title="Закрыть" class="close">X</a>
         <h2>Укажите данные</h2>
         <p><select id="sel_prof_prem">
         </select></p>
-        <p><input id="prem_bonus" type="number" value="Введите бонус"/></p>
+        <p><input  id="prem_bonus" type="number" value="Введите бонус"/></p>
         <a id="close_prem" title="Закрыть" href="#close">Добавить</a>
     </div>
 </div>
@@ -90,6 +93,6 @@
 }
 reloadFDtbXg6kP(); </script>
 
-
+</div>
 </body>
 </html>
