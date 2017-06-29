@@ -3,7 +3,7 @@ define('local_host', 'localhost');
 define('us_er', 'root');
 define('pass_word', '');
 define('url_to_images', 'http://localhost/test-winestyle/css/images/');
-
+define('local_url_to_images', 'c:/xampp/htdocs/test-winestyle/css/images/');
 
 function db_create_db()
 {
@@ -154,6 +154,8 @@ function resize($img_path)
 
     if (!file_exists($path))
         return false;
+    if (!local_url_to_images . 'm' . end(explode('/', $img_path)))
+        return true;
 
     $ext = strtolower(pathinfo($path, PATHINFO_EXTENSION));
 
@@ -186,7 +188,7 @@ function resize($img_path)
     header("Content-type: {$size['mime']}");
 
     if ($ext == 'jpg' || $ext == 'jpeg') {
-        imagejpeg($im, 'c:/xampp/htdocs/test-winestyle/css/images/m' . end(explode('/', $img_path)));
+        imagejpeg($im, local_url_to_images . 'm' . end(explode('/', $img_path)));
     }
     if ($ext == 'gif') {
         imagegif($im);
@@ -195,6 +197,7 @@ function resize($img_path)
         imagepng($im);
     }
     imagedestroy($im);
+    return true;
 }
 
 

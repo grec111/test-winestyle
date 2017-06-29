@@ -1,4 +1,3 @@
-//<script type="text/javascript">
 $(document).ready(function () {
 //        var currentdate = new Date();
 //        var d=currentdate.getDate()+'-'+currentdate.getMonth()+'-'+currentdate.getFullYear();
@@ -36,14 +35,15 @@ $(document).ready(function () {
             url: 'index.php',
             data: {'new_assoc': str_new_assoc},
             success: function (result_p) {
-                console.log(result_p);
+//                console.log(result_p);
                 if (result_p == true) {
                     alert("Success");
                     var html_t = '';
-                    var str=element.Avatar;
+                    var str = element.Avatar;
                     var min_ava = str.replace("images/", "images/m");
                     var temp_date = $('#month').val() + '-01';
-                    html_t = '<tr><td align="center">' + $('#name_assoc').val() + '</td><td align="center">' + $('#last_name_assoc').val() + '</td><td align="center">' + $('#sel_prof').val() + '</td><td  id="salary" width="5%" align="center">' + $('#inp_salary').val() + '</td><td align="center">' + 0 + '</td><td align="center"><a rel="lightbox-mygallery" href="' + '' + '"><img src="' + min_ava + '"/></a>' + '</td><td align="center">' + temp_date + '</td></tr>';
+                    var html_ava = '<a href="' + str + '" data-lightbox="' + element.Avatar + '"><img src="' + min_ava + '" ></a>';
+                    html_t = '<tr><td align="center">' + $('#name_assoc').val() + '</td><td align="center">' + $('#last_name_assoc').val() + '</td><td align="center">' + $('#sel_prof').val() + '</td><td  id="salary" width="5%" align="center">' + $('#inp_salary').val() + '</td><td align="center">' + 0 + '</td><td align="center">'+html_ava+ '</td><td align="center">' + temp_date + '</td></tr>';
                     $('#table > tbody').append(html_t);
                 } else alert("Error");
             }
@@ -86,12 +86,12 @@ function send_request(data) {
         data: {'month': data},
         success: function (result) {
             var html = '<tr></tr><th>Имя</th><th>Фамилия</th><th>Должность</th><th>ЗП</th><th>Бонус</th><th>Фото</th><th>Дата</th></tr>';
-            var min_ava='';
-            $.each($.parseJSON(result), function (index, element) {
-                var str=element.Avatar;
-                var min_ava = str.replace("images/", "images/m");
 
-                html += '<tr><td align="center">' + element.Worker_Name + '</td><td align="center">' + element.Worker_LastName + '</td><td align="center">' + element.Worker_Prof + '</td><td  id="salary" width="5%" align="center">' + element.Salary + '</td><td align="center">' + element.Bonus + '</td><td align="center"><a rel="lightbox-mygallery" href="' + element.Avatar + '"><img src="' + min_ava + '"/></a>' + '</td><td align="center">' + element.Date_s + '</td></tr>';
+            $.each($.parseJSON(result), function (index, element) {
+                var str = element.Avatar;
+                var min_ava = str.replace("images/", "images/m");
+                var html_ava = '<a href="' + str + '" data-lightbox="' + element.Avatar + '"><img src="' + min_ava + '" ></a>';
+                html += '<tr><td align="center">' + element.Worker_Name + '</td><td align="center">' + element.Worker_LastName + '</td><td align="center">' + element.Worker_Prof + '</td><td  id="salary" width="5%" align="center">' + element.Salary + '</td><td align="center">' + element.Bonus + '</td><td align="center">' + html_ava + '</td><td align="center">' + element.Date_s + '</td></tr>';
             });
             $('#table > tbody').append(html);
         }
@@ -107,7 +107,7 @@ function update_prof(id_sel) {
         url: 'index.php',
         data: {'prof': 'yes'},
         success: function (result_p) {
-            console.log(result_p);
+//            console.log(result_p);
             var parser_res = $.parseJSON(result_p);
             $.each(parser_res, function (index, value) {
                 list_opt.append(new Option(value, value));
@@ -115,4 +115,5 @@ function update_prof(id_sel) {
         }
     });
 }
-//</script>
+
+

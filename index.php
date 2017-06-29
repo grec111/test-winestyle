@@ -18,6 +18,7 @@ if (isset($_GET['new_assoc'])) {
     echo new_assoc($_GET['new_assoc']);
     unset($_GET['new_assoc']);
 }
+//resize('http://localhost/test-winestyle/css/images/13.jpg');
 //$_GET['prem_bonus']='Менеджер,777';
 if (isset($_GET['prem_bonus'])) {
     echo prem_bonus($_GET['prem_bonus']);
