@@ -39,7 +39,7 @@ $(document).ready(function () {
                 if (result_p == true) {
                     alert("Success");
                     var html_t = '';
-                    var str = 'http://localhost/test-winestyle/css/images/undef.jpg';
+                    var str = '/css/images/undef.jpg';
                     var min_ava = str.replace("images/", "images/m");
                     var temp_date = $('#month').val() + '-01';
                     var html_ava = '<a href="' + str + '" data-lightbox="' + str + '"><img src="' + min_ava + '" ></a>';

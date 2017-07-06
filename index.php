@@ -1,4 +1,4 @@
-﻿<?php
+<?php
 require_once("database.php");
 //вызов загрузки ьаблицы по указанному месяц
 if (isset($_GET['month'])) {

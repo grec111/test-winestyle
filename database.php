@@ -1,11 +1,11 @@
 <?php
 define('local_host', 'localhost');
 define('us_er', 'root');
-define('pass_word', '');
-define('url_to_images', 'http://localhost/test-winestyle/css/images/');
-define('local_url_to_images', 'c:/xampp/htdocs/test-winestyle/css/images/');
+define('pass_word', 'password');
+define('url_to_images', '/css/images/');
+define('local_url_to_images', '/css/images/');
 //если нет авы указываем умолчание
-define('undef', 'http://localhost/test-winestyle/css/images/undef.jpg');
+define('undef', '/css/images/undef.jpg');
 
 
 function db_create_db()
